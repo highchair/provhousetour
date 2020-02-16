@@ -1,0 +1,19 @@
+
+.footer {
+  background-color: $white;
+  color: gray("700");
+  
+  & > div {
+    border-top: 0.5px solid $border-color;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  p {
+    margin-bottom: 0;
+  }
+  
+  address {}
+}

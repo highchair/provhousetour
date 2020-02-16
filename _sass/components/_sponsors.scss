@@ -1,0 +1,25 @@
+.sponsors {
+  &__title {
+    letter-spacing: ($kerning * 2);
+    text-transform: uppercase;
+  }
+
+  &__list {
+    justify-content: center;
+    align-items: center;
+    
+    .img-container {
+      @extend .u__m-spacing;
+      object-fit: contain;
+    }
+  }
+  
+  .text-center .img--rwd {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .container + h3 {
+    padding-top: 1rem;
+  }
+}

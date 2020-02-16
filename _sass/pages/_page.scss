@@ -1,0 +1,55 @@
+.page {
+  &__cover,
+  &__cover img {
+    width: 100vw;
+    height: 110vh;
+  }
+  
+  &__cover {
+    animation: fade-out 1s linear;
+    position: fixed;
+    top: 0;
+    opacity: 1;
+    overflow: hidden;
+    transform: translateY(0);
+    z-index: -1;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      object-fit: cover;
+    }
+  }
+  
+  &__header {
+    //@include media-breakpoint-up(lg) {
+      padding-top: 28vh;
+      padding-bottom: 16vh;
+    //}
+  }
+  
+  &__title {
+    color: $white;
+    text-shadow: 0 0 1rem rgba(#000, 0.5), 0 0 0.25rem rgba(#000, 0.25);
+  }
+}
+
+@keyframes fade-out {
+  to {
+    opacity: 0;
+    transform: translateY(-10vh);
+  }
+}
+
+:root .page__cover {
+  // Pause the animation
+  animation-play-state: paused;
+  // Bind the animation to scroll
+  animation-delay: calc(var(--scroll) * -1s);
+  // These last 2 properites clean up overshoot weirdness
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}

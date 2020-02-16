@@ -1,0 +1,17 @@
+// In addition — or in contrast — to styles set by BS4
+
+a.btn {
+  text-decoration: none;
+}
+
+.btn {
+  box-shadow: 0 6px 0 rgba(0,0,0,0.25);
+  margin-bottom: 6px;
+  transform: translateY(0);
+  white-space: normal; // override BS4 here, our button names are long
+  
+  @include hover-focus {
+    box-shadow: 0 2px 0 rgba(0,0,0,0.25);
+    transform: translateY(4px);
+  }
+}

@@ -1,0 +1,92 @@
+// General global styles. Some override settings in USWDS
+
+// General vertical rhythm
+// Not ready for the effects of this yet.
+// Perhaps we need to scope it inside of something first
+//* + * {
+//  margin-top: $vertical-rhythm;
+//}
+
+html {
+  overflow-x: hidden;
+}
+
+// Placeholder extend for DRY
+%fluid-gutter {
+  @include fluid-units(
+    'padding-left' 'padding-right',
+    $gutter-min,
+    $gutter-max,
+    strip-unit(rem(bp(small))),
+    strip-unit(rem(bp(large)))
+  );
+}
+
+// Flexible gutter helper
+%margin-right {
+  @include fluid-units('margin-right', $gutter-min, $gutter-max, $min-vw, $max-vw);
+}
+
+%margin-left {
+  @include fluid-units('margin-left', $gutter-min, $gutter-max, $min-vw, $max-vw);
+}
+
+
+// Utilities
+
+// Max-width container
+.u {
+
+  &__container {
+    margin: 0 auto;
+    max-width: $max-width;
+  }
+  
+  &__container--large {
+    margin: 0 auto;
+    max-width: $max-width__large;
+  }
+
+  // No max width, just padding
+  &__spacing {
+    @extend %fluid-gutter;
+    padding-top: $vertical-rhythm;
+    padding-bottom: $vertical-rhythm;
+  }
+  
+  &__m-spacing {
+    @include fluid-units(
+      'margin',
+      $gutter-min,
+      $gutter-max,
+      strip-unit(rem(bp(small))),
+      strip-unit(rem(bp(x-large)))
+    );
+  }
+  
+  &__vspacing {
+    @include fluid-units(
+      'padding-top' 'padding-bottom',
+      $vertical-min,
+      $vertical-max,
+      strip-unit(rem(bp(small))),
+      strip-unit(rem(bp(x-large)))
+    );
+  }
+  
+  &__vspacing-b {
+    @include fluid-units(
+      'padding-bottom',
+      $vertical-min,
+      $vertical-max,
+      strip-unit(rem(bp(small))),
+      strip-unit(rem(bp(x-large)))
+    );
+  }
+  
+  // Max-width for text content
+  &__content {
+    max-width: $max-width__text;
+    margin: 0 auto;
+  }
+}

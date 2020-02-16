@@ -1,0 +1,85 @@
+//
+// Color system
+//
+
+// Custom values for Brown pps Lab
+$white:    #fff;
+//$gray-100: #f8f9fa !default;
+$gray-200: #e1e1e5;
+$gray-300: #bcbbc4;
+$gray-400: #a4a2ae;
+$gray-500: #797788;
+$gray-600: #504e5a;
+$gray-700: #3d3c45;
+//$gray-800: #343a40 !default;
+$gray-900: #222;
+$black:    #101010;
+
+
+// Main brand colors
+$pps-blue: #369;
+$pps-blue__h: 210;
+$pps-blue__s: 50;
+$pps-blue__l: 40;
+
+$pps-denim: #658E9C;
+$pps-denim__h: 195;
+
+$pps-green: #8CBA80;
+$pps-green__h: 108;
+
+$pps-yellow: #CACF85;
+$pps-yellow__h: 64;
+
+$pps-purple: #514663;
+$pps-purple__h: 263;
+
+
+// Tints
+$tint__pps-blue__lightest: hsl($pps-blue__h, 100, 92); // #d6ebff: 6.67 with gray-600
+$tint__pps-blue__dark: hsl($pps-blue__h, 62, 28); // #1b4774: 5.02 ratio with gray-300
+
+
+// Generic variables
+$color__body-fg: $gray-900;
+// Make the body bg the same as the footer bg.
+// This makes the page seamless when the body is shorter than the viewport height.
+$color__body-bg: $black;
+
+$color__link: $tint__pps-blue__dark;
+$color__link-hover: $gray-700;
+$color__link-focus: $pps-blue;
+
+$color__borders: $gray-200;
+
+
+// Bootstrap color variables
+$blue: $tint__pps-blue__dark;
+//$indigo:  #6610f2;
+$purple: $pps-purple;
+//$pink:    #e83e8c;
+//$red:     #dc3545;
+//$orange:  #fd7e14;
+$yellow: $pps-yellow;
+$green: $pps-green;
+$teal: $pps-blue;
+$cyan: $pps-denim;
+
+$primary: $pps-blue;
+$secondary: $white;
+$success: $pps-green;
+$info: $pps-blue;
+//$warning:       $yellow;
+//$danger:        $red;
+$light: $gray-200;
+$dark: $tint__pps-blue__dark;
+
+// Set a specific jump point for requesting color jumps
+//$theme-color-interval:      8%;
+
+// The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
+//$yiq-contrasted-threshold:  150;
+
+// Customize the light and dark text colors for use in our YIQ color contrast function.
+//$yiq-text-dark:             $gray-900;
+//$yiq-text-light:            $white;

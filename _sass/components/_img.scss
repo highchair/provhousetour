@@ -1,0 +1,22 @@
+.img {
+  &--rwd {
+    // The BS4 framework is not opinionated
+    // Add this class to force an image to be responsive
+    display: block;
+    max-width: 100%;
+  }
+  
+  &__break {
+    margin-bottom: 0;
+    
+    img {
+      height: 60vh; // Max the height of the image to about half the viewport
+      width: 100%;
+      object-fit: cover;
+    }
+    
+    + .u__m-spacing {
+      margin-top: 0;
+    }
+  }
+}

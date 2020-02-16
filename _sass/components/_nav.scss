@@ -1,0 +1,128 @@
+// Navigation Bar
+// A mix oif custom styles (.nav) and BS4 classes (.navbar)
+
+.nav {
+  @extend %fluid-gutter; // for fluid left and right padding
+  align-items: flex-start;
+
+  @include media-breakpoint-down(md) {
+    box-shadow: 0 0 0.5rem rgba(#000, 0.25);
+  }
+
+  // Actually one level above .nav
+  &__container {
+    background-color: rgba($black, 0.88);
+  }
+  
+  &__button {
+    border-radius: 0;
+    padding: 0;
+    margin: 0.75rem -0.5rem 0.5rem;
+    
+    &__icon,
+    &__text {
+      color: $white;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    
+    &__icon {
+      font-size: 2.5rem;
+      padding: 0 0.5rem 0 1rem;
+    }
+    
+    &__text {
+      font-size: 1.125rem;
+      padding: 0.25rem 0.5rem 0 0;
+      letter-spacing: $kerning;
+      text-transform: uppercase;
+    }
+  }
+  
+  &__logo {
+    height: 56px;
+
+    img {
+      height: 72px;
+    }
+  }
+  
+  // Collapsible area for mobile
+  &__pane {
+    justify-content: center;
+  }
+  
+  // UL
+  &__list {
+    
+    @include media-breakpoint-up(md) {
+      //margin-left: - $spacer; // To offset the first anchor's left padding
+    }
+    
+    @include media-breakpoint-up(lg) {
+      //margin-left: - ($spacer * 2);
+    }
+  }
+  
+  // Sibling hover effect
+  &__list &__link {
+    // Hover off effect
+    opacity: 1;
+    transition: all 400ms ease 400ms;
+  }
+ 
+  &__list:hover &__link:not(:hover) {
+    // Hover on effect
+    filter: blur(1px);
+    opacity: 0.6;
+    transition: all 250ms ease;
+  }
+  
+  // LI
+  &__item {}
+  
+  // Anchor
+  &__link {
+    color: $white;
+    background-color: transparent;
+    display: block;
+    font-weight: $font-weight-bold;
+    padding: $spacer ($spacer / 2) ($spacer * 0.75);
+    text-decoration: none;
+    
+    // Already set by BS4 inside .navbar-expand-md .navbar-nav .nav-link
+    //@include media-breakpoint-up(lg) {
+    //  padding-left: $navbar-nav-link-padding-x;
+    //  padding-right: $navbar-nav-link-padding-x;
+    //}
+    
+    @include hover-focus {
+      color: color("yellow");
+      background-color: $black;
+    }
+    
+    &.primary.active {
+      color: $white;
+      background-color: theme-color("primary");
+    }
+    
+    &.green.active {
+      color: $black;
+      background-color: color("green");
+    }
+    
+    &.green.active {
+      color: $black;
+      background-color: color("green");
+    }
+    
+    &.denim.active {
+      color: $black;
+      background-color: $pps-denim;
+    }
+  }
+  
+  &__spacer {
+    height: em(56);
+  }
+}

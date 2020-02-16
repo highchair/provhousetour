@@ -1,0 +1,30 @@
+// Define a "System" font stack for fallbacks
+@font-face {
+  font-family: 'System Sans';
+  font-style: normal;
+  font-weight: normal;
+  src: local(".SFNSText-Light"),
+       local(".HelveticaNeueDeskInterface-Light"),
+       local(".LucidaGrandeUI"),
+       local("Ubuntu Light"),
+       local("Segoe UI Light"),
+       local("Roboto-Light"),
+       local("DroidSans"),
+       local("Tahoma");
+}
+
+// Define the family and weights
+$font-name__custom: 'Cormorant Infant';
+
+$font-stack__sans: 'System Sans', sans-serif;
+$font-stack__serif: $font-name__custom, TimesNewRoman, 'Times New Roman', serif;
+$font-stack__mono: Consolas, Menlo, monospace;
+
+$font-weight__normal: 400;
+$font-weight__medium: 600;
+$font-weight__bold: 700;
+
+// Line heights
+$line-height__base: 1.5;
+$line-height__tight: 1.25;
+$line-height__loose: 1.625;
