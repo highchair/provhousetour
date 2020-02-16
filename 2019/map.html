@@ -1,0 +1,25 @@
+---
+layout: tour
+title: Map of the 2019 Tour
+nav-title: Map of the 2019 Tour
+permalink: /2019/map/
+body-class: tour
+---
+
+<main class="u__vspacing bg__white">
+  <div class="nav__spacer"></div>
+  <article class="u__container">
+    <div class="u__spacing u__content">
+      <h2 class="h3">{{ page.title }}</h2>
+    </div>
+    
+    <div class="gmap__outer">
+      <iframe class="gmap__canvas" src="https://www.google.com/maps/d/u/3/embed?mid=1UKxewFo2fjsthBTEF4spBiwxwfUw9nqe"></iframe>
+    </div>
+    <style>
+      .gmap__outer{ position: relative; text-align: right; height: calc(100vh - 62px); width: 100%; }
+      .gmap__canvas { overflow: hidden; background: none !important; height: calc(100vh - 62px); width: 100%; }
+    </style>
+    
+  </article>
+</main>
