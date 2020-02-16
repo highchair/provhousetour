@@ -1,0 +1,60 @@
+title: PPS Festival of Historic Houses
+description: June 13, 15-16, 2019 in the Paterson Park neighborhood of Providence, RI
+  
+markdown: kramdown
+highlighter: rouge
+redcarpet:
+  extensions: ['no_intra_emphasis',
+    'fenced_code_blocks',
+    'autolink',
+    'strikethrough',
+    'superscript',
+    'with_toc_data'
+    ]
+
+baseurl: '/archive_tour2019/'
+currenttour: '2019/'
+port: 4090
+url: //www.providencehousetour.com
+twitter_handle: pvdpreservation
+
+
+# Define some defaults
+defaults:
+  -
+    values:
+      layout: "default"
+      author: "Providence Preservation Society"
+
+
+# Permalink Configuration
+permalink: /blog/:year/:month/:title
+
+# Post types
+#collections:
+#  team:
+#    output: false
+#    permalink: /team/:name
+
+# Exclude from _site build
+exclude: [
+  '.git',
+  '.gitignore',
+  'Gemfile',
+  'Gemfile.lock',
+  'LICENSE',
+  'README',
+  'assets/sponsors/not-used-yet'
+  ]
+
+
+# Setting relative permalink to false. See http://jekyllrb.com/docs/upgrading/.
+relative_permalinks: false
+
+sass:
+  sass_dir: _sass
+  
+
+# Plugins and extras
+plugins:
+- jekyll-autoprefixer
