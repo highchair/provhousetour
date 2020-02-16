@@ -1,3 +1,9 @@
+PPS House Tour Marketing Site
+=============================
+
+Stand-alone marketing website for the annual Festival of Historic Houses. 
+
+
 # Built on Grey Matter from Oomph
 
 [Grey Matter](https://github.com/oomphinc/oomph-grey-matter) is a boilerplate for 
@@ -14,7 +20,7 @@ To get up and running:
 Navigate to the project folder in your Terminal, then install Bundler if you do
 not already have it installed:
 
-{% highlight shell %}
+```sh
 // Check to see if Bundler is installed:
 $ which bundler
 
@@ -23,7 +29,7 @@ $ gem install bundler
 
 // Once installed (or if previously installed), run inside this project:
 $ bundle install
-{% endhighlight %}
+```
 
 The project dependencies should now be installed.
 
@@ -34,9 +40,9 @@ the permissions of your computer.
 ## Run the Local server and SASS compiler
 From the project root, run: 
 
-{% highlight shell %}
+```sh
 $ jekyll serve
-{% endhighlight  %}
+```
 
 The server is available in your browser at `http://localhost:4090/`. 
 
@@ -46,7 +52,8 @@ i.e. `http://localhost:4090/[path]`. When you upload the sites content to a serv
 all URLs will be prefixed with `/[path]`.
 
 ## Project Structure
-{% highlight JavaScript %}
+
+```sh
 config.yml          // project set up and variables for base URL path
 _includes           // HTML partials
 -- footer.html
@@ -69,7 +76,7 @@ Gemfile             // Project dependency manager
 Gemfile.lock
 index.html          // Site content front page
 etc...
-{% endhighlight %}
+```
 
 ## Jekyll Standard Usage
 Any folder prefixed with an underscore is used as a build folder only, it is not
