@@ -4,7 +4,7 @@ PPS House Tour Marketing Site
 Stand-alone marketing website for the annual Festival of Historic Houses. 
 
 
-# Built on Grey Matter from Oomph
+## Built on Grey Matter from Oomph
 
 [Grey Matter](https://github.com/oomphinc/oomph-grey-matter) is a boilerplate for 
 stand-alone Jekyll projects. Inspired by [Distillery](https://github.com/thinkshout/distillery/tree/master/)
@@ -12,11 +12,11 @@ stand-alone Jekyll projects. Inspired by [Distillery](https://github.com/thinksh
 Oomph Scaffold custom code and *Bootstrap 4*.
 
 
-# Getting started
+## Getting started
 To get up and running:
 
 
-## Install dependencies
+### Install dependencies
 Navigate to the project folder in your Terminal, then install Bundler if you do
 not already have it installed:
 
@@ -37,7 +37,7 @@ The project dependencies should now be installed.
 the permissions of your computer.
 
 
-## Run the Local server and SASS compiler
+### Run the Local server and SASS compiler
 From the project root, run: 
 
 ```sh
@@ -51,7 +51,7 @@ value in  `_config` and restart the server. The web url will change as well,
 i.e. `http://localhost:4090/[path]`. When you upload the sites content to a server,
 all URLs will be prefixed with `/[path]`.
 
-## Project Structure
+### Project Structure
 
 ```sh
 config.yml          // project set up and variables for base URL path
@@ -78,7 +78,7 @@ index.html          // Site content front page
 etc...
 ```
 
-## Jekyll Standard Usage
+### Jekyll Standard Usage
 Any folder prefixed with an underscore is used as a build folder only, it is not
 compiled and rendered. An `assets` folder (unprefixed) will be included in the
 site build. Additional files that should be excluded from the build should be
@@ -100,13 +100,13 @@ structure.
 
 More in depth Jekyll instructions here from [JekyllRB](https://jekyllrb.com/).
 
-## Markdown
+### Markdown
 Markdown is supported and may be used inside files with a `.md` extension. 
 [A markdown syntax usage guide](https://github.com/fletcher/MultiMarkdown/blob/master/Documentation/Markdown%20Syntax.md).
 Daring Fireball has a really great [online converter](http://daringfireball.net/projects/markdown/dingus)
 if you need troubleshooting help.
 
-# Updates
+## Updates
 Keep Ruby Gems and the Gemfile up to date. 
 
 ```sh

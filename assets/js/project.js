@@ -62,10 +62,10 @@ document.addEventListener( 'DOMContentLoaded', function () {
   
   var root = document.body.style;
   //console.log(root);
-  var sponsor_height = $("#sponsors").outerHeight(true);
+  //var sponsor_height = $("#sponsors").outerHeight(true);
   var footer_height = $("#mainfoot").outerHeight(true);
   var viewport_height = window.innerHeight;
-  var scroll_height = viewport_height + footer_height + sponsor_height;
+  var scroll_height = viewport_height + footer_height;
   //console.log("footer_height = " + footer_height);
   //console.log("viewport_height = " + viewport_height);
   //console.log("scroll_height = " + scroll_height);
