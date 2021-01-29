@@ -12,9 +12,9 @@ redcarpet:
     'with_toc_data'
     ]
 
-baseurl: '/archive_tour2019/'
-currenttour: '2019/'
-port: 4090
+baseurl: '/'
+currenttour: '2020/'
+port: 5010
 url: //www.providencehousetour.com
 twitter_handle: pvdpreservation
 
@@ -44,7 +44,13 @@ exclude: [
   'Gemfile.lock',
   'LICENSE',
   'README',
-  'assets/sponsors/not-used-yet'
+  'assets/sponsors/not-used-yet',
+  'about.html',
+  '2019',
+  'pps.html',
+  'preview.html',
+  'related.html',
+  'tour.html'
   ]
 
 

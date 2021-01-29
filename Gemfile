@@ -12,3 +12,5 @@ gem "sass",">=3.7.4"
 gem "sass-globbing",">=1.1.0"
 gem "uglifier",">=4.1.0"
 gem "nokogiri", ">= 1.10.4"
+# needed for an incompatibility issue with Jekyll Assets: https://github.com/envygeeks/jekyll-assets/issues/622
+gem "sprockets", "~> 3.7"
