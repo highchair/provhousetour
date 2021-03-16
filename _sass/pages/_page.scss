@@ -1,6 +1,75 @@
 .page {
   
-  &__cover,
+  &__cover {
+    position: relative;
+    @include fluid-units(
+      'margin-bottom',
+      $vertical-min,
+      $vertical-max,
+      strip-unit(rem(bp(small))),
+      strip-unit(rem(bp(x-large)))
+    );
+    
+    img {
+      position: relative;
+      left: 50%;
+      max-width: unset;
+      transform: translateX(-50%);
+      @include fluid-units(
+        'height',
+        strip-unit(em(200)),
+        strip-unit(em(300)),
+        strip-unit(rem(bp(medium))),
+        strip-unit(rem(bp(xx-large)))
+      );
+    }
+    
+    p {
+      color: $white;
+      text-shadow: 0 0 0.5em rgba($black, 0.33), 0 0 0.25em rgba($black, 0.75);
+      padding-top: 1rem;
+      padding-left: 1rem;
+      
+      @include media-breakpoint-up(sm) {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+    
+    h1 {
+      color: $white;
+      font-weight: $font-weight__bold;
+      margin-bottom: 0;
+      text-shadow: 0 0 0.25em rgba($black, 0.25), 0 0 0.125em rgba($black, 0.5);
+      @include fluid-units(
+        'padding-left',
+        $gutter-min,
+        $gutter-max,
+        strip-unit(rem(bp(small))),
+        strip-unit(rem(bp(large)))
+      );
+      
+      @include media-breakpoint-up(md) {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+  
+  &__subtitle {
+    font-weight: $font-weight__bold;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+  }
+  
+  &__title {
+    letter-spacing: 0.0625em;
+    text-transform: lowercase;
+  }
+  
+  /*&__cover,
   &__cover img {
     width: 100vw;
     height: 110vh;
@@ -26,19 +95,19 @@
   }
   
   &__header {
-    //@include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(lg) {
       padding-top: 28vh;
       padding-bottom: 16vh;
-    //}
+    }
   }
   
   &__title {
     color: $white;
     text-shadow: 0 0 1rem rgba(#000, 0.5), 0 0 0.25rem rgba(#000, 0.25);
-  }
+  }*/
 }
 
-@keyframes fade-out {
+/*@keyframes fade-out {
   to {
     opacity: 0.25;
     transform: translateY(-10vh);
@@ -53,4 +122,4 @@
   // These last 2 properites clean up overshoot weirdness
   animation-iteration-count: 1;
   animation-fill-mode: both;
-}
+}*/

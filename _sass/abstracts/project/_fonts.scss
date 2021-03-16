@@ -14,7 +14,7 @@
 }
 
 // Define the family and weights
-$font-name__custom: 'Cormorant Infant';
+$font-name__custom: 'Cormorant Garamond';
 
 $font-stack__sans: 'System Sans', sans-serif;
 $font-stack__serif: $font-name__custom, TimesNewRoman, 'Times New Roman', serif;
@@ -22,7 +22,7 @@ $font-stack__mono: Consolas, Menlo, monospace;
 
 $font-weight__normal: 400;
 $font-weight__medium: 600;
-$font-weight__bold: 700;
+$font-weight__bold: 600;
 
 // Line heights
 $line-height__base: 1.5;

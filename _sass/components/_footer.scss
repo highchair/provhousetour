@@ -2,13 +2,10 @@
 .footer {
   background-color: $white;
   color: gray("700");
+  text-align: center;
   
-  & > div {
-    border-top: 0.5px solid $border-color;
-  }
-  
-  a {
-    text-decoration: none;
+  .page__title {
+    color: $pps-green;
   }
   
   p {

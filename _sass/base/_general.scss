@@ -7,8 +7,14 @@
 //  margin-top: $vertical-rhythm;
 //}
 
-html {
+html,
+body {
   overflow-x: hidden;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1920px;
 }
 
 // Placeholder extend for DRY
@@ -56,7 +62,17 @@ html {
   
   &__m-spacing {
     @include fluid-units(
-      'margin',
+      'margin-left' 'margin-right',
+      $gutter-min,
+      $gutter-max,
+      strip-unit(rem(bp(small))),
+      strip-unit(rem(bp(x-large)))
+    );
+  }
+  
+  &__mb-spacing {
+    @include fluid-units(
+      'margin-bottom',
       $gutter-min,
       $gutter-max,
       strip-unit(rem(bp(small))),

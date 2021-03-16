@@ -21,7 +21,7 @@
       color: $white;
       
       @include hover-focus {
-        color: $tint__pps-blue__lightest;
+        color: $tint__pps-green__lightest;
       }
     }
   }
@@ -43,8 +43,8 @@
     background-color: $white;
   }
   
-  &__green {
-    background-color: color("green");
+  &__yellow {
+    background-color: $tint__pps-green__lightest;
   }
   
   &__denim {

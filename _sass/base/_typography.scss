@@ -1,11 +1,6 @@
 // Link styles not addressed in Bootstrap
 a {
   transition: $transition;
-
-  &[href^=tel] {
-    color: inherit;
-    text-decoration: dotted;
-  }
 }
 
 // Responsive and fluid type sizing
@@ -36,7 +31,7 @@ h3, .h3 {
   font-weight: $font-weight-normal;
   letter-spacing: ($kerning * 2);
   margin-bottom: ($vertical-rhythm * 2);
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 
 h4, .h4 {
