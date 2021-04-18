@@ -2,16 +2,18 @@
 // A mix oif custom styles (.nav) and BS4 classes (.navbar)
 
 .nav {
-  @extend %fluid-gutter; // for fluid left and right padding
+  //@extend %fluid-gutter; // for fluid left and right padding
   align-items: flex-start;
-
-  @include media-breakpoint-down(md) {
-    box-shadow: 0 0 0.5rem rgba(#000, 0.25);
-  }
 
   // Actually one level above .nav
   &__container {
-    background-color: rgba($black, 0.88);
+    background-color: rgba($tint__pps-green__dark, 0.92);
+    
+    @include media-breakpoint-up(md) {
+      position: sticky;
+      position: -webkit-sticky;
+      top: 0;
+    }
   }
   
   &__button {
@@ -40,29 +42,24 @@
   }
   
   &__logo {
-    height: 56px;
+    height: 46px;
 
     img {
-      height: 72px;
+      height: 58px;
     }
   }
   
   // Collapsible area for mobile
   &__pane {
     justify-content: center;
+    
+    @include media-breakpoint-up(sm) {
+      justify-content: flex-end;
+    }
   }
   
   // UL
-  &__list {
-    
-    @include media-breakpoint-up(md) {
-      //margin-left: - $spacer; // To offset the first anchor's left padding
-    }
-    
-    @include media-breakpoint-up(lg) {
-      //margin-left: - ($spacer * 2);
-    }
-  }
+  &__list {}
   
   // Sibling hover effect
   &__list &__link {
@@ -87,7 +84,7 @@
     background-color: transparent;
     display: block;
     font-weight: $font-weight-bold;
-    padding: $spacer ($spacer / 2) ($spacer * 0.75);
+    padding: $spacer $spacer ($spacer * 0.75);
     text-decoration: none;
     
     // Already set by BS4 inside .navbar-expand-md .navbar-nav .nav-link
@@ -109,16 +106,6 @@
     &.green.active {
       color: $black;
       background-color: color("green");
-    }
-    
-    &.green.active {
-      color: $black;
-      background-color: color("green");
-    }
-    
-    &.denim.active {
-      color: $black;
-      background-color: $pps-denim;
     }
   }
   

@@ -7,19 +7,16 @@
   &__list {
     justify-content: center;
     align-items: center;
-    
-    .img-container {
-      @extend .u__m-spacing;
-      object-fit: contain;
-    }
   }
   
-  .text-center .img--rwd {
+  img {
+    display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 2rem;
   }
   
-  .container + h3 {
-    padding-top: 1rem;
+  h3 {
+    padding-top: 3rem;
   }
 }

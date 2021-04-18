@@ -2,13 +2,7 @@
   
   &__cover {
     position: relative;
-    @include fluid-units(
-      'margin-bottom',
-      $vertical-min,
-      $vertical-max,
-      strip-unit(rem(bp(small))),
-      strip-unit(rem(bp(x-large)))
-    );
+    overflow-x: hidden;
     
     img {
       position: relative;
@@ -69,42 +63,15 @@
     text-transform: lowercase;
   }
   
-  /*&__cover,
-  &__cover img {
-    width: 100vw;
-    height: 110vh;
+  &__opener {
+    @include fluid-units(
+      'margin-top',
+      $vertical-min,
+      $vertical-max,
+      strip-unit(rem(bp(small))),
+      strip-unit(rem(bp(x-large)))
+    );
   }
-  
-  &__cover {
-    animation: fade-out 1s linear;
-    position: fixed;
-    top: 0;
-    opacity: 0.9;
-    overflow: hidden;
-    transform: translateY(0);
-    z-index: -1;
-  
-    img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      object-fit: cover;
-    }
-  }
-  
-  &__header {
-    @include media-breakpoint-up(lg) {
-      padding-top: 28vh;
-      padding-bottom: 16vh;
-    }
-  }
-  
-  &__title {
-    color: $white;
-    text-shadow: 0 0 1rem rgba(#000, 0.5), 0 0 0.25rem rgba(#000, 0.25);
-  }*/
 }
 
 /*@keyframes fade-out {

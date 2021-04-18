@@ -7,11 +7,6 @@
 //  margin-top: $vertical-rhythm;
 //}
 
-html,
-body {
-  overflow-x: hidden;
-}
-
 body {
   margin: 0 auto;
   max-width: 1920px;
@@ -50,7 +45,7 @@ body {
   
   &__container--large {
     margin: 0 auto;
-    max-width: $max-width__large;
+    max-width: em(1230);
   }
 
   // No max width, just padding
