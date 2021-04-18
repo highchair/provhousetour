@@ -4,13 +4,14 @@ description: June 13, 15-16, 2019 in the Paterson Park neighborhood of Providenc
 markdown: kramdown
 highlighter: rouge
 redcarpet:
-  extensions: ['no_intra_emphasis',
+  extensions: [
+    'no_intra_emphasis',
     'fenced_code_blocks',
     'autolink',
     'strikethrough',
     'superscript',
     'with_toc_data'
-    ]
+  ]
 
 baseurl: '/'
 currenttour: '2020/'
@@ -44,14 +45,8 @@ exclude: [
   'Gemfile.lock',
   'LICENSE',
   'README',
-  'assets/sponsors/not-used-yet',
-  'about.html',
-  '2019',
-  'pps.html',
-  'preview.html',
-  'related.html',
-  'tour.html'
-  ]
+  '2019'
+]
 
 
 # Setting relative permalink to false. See http://jekyllrb.com/docs/upgrading/.
