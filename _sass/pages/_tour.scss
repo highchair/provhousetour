@@ -4,25 +4,32 @@
 /*body*/ .layout__tour {
   margin: 0 auto;
   max-width: 480px;
-  
+
   .navbar {
     overflow: auto;
     max-height: 100vh;
     align-items: flex-start;
   }
-  
+
   .nav {
     // Reset of the standard styles
     &__item {
-      margin-left: - $spacer;
-      margin-right: - $spacer;
+      //margin-left: - $spacer;
+      //margin-right: - $spacer;
     }
-    
+
     &__link {
+      background-color: $tint__pps-green__dark;
       padding-left: $spacer;
       padding-right: $spacer;
+
+      &:hover,
+      &:focus,
+      &[aria-current="page"] {
+        background-color: $gray-800;
+      }
     }
-    
+
     &__logo img {
       height: 54px;
     }
@@ -33,35 +40,49 @@
   // New tour nav elements
   &__nav {
     &__address {
-      color: lighten($pps-green, 10);
+      color: $tint__pps-green__lightest;
       display: block;
       font-family: Helvetica, sans-serif;
       font-size: 87.5%;
       font-weight: 700;
     }
-    
+
     &__house-name {
       display: block;
     }
   }
-  
+
   // List on homepage
-  &__houses__list {
-    li {
-      padding-bottom: $spacer;
+//   &__houses__list {
+//     li {
+//       padding-bottom: $spacer;
+//     }
+//
+//     a {
+//       text-decoration: none;
+//     }
+//   }
+
+  // House page
+  &__houses {
+    h2 {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
     }
-    
+
     a {
+      display: block;
+      color: $white;
+      padding: ($spacer * 1.5) $spacer ($spacer * 1.25);
       text-decoration: none;
     }
   }
-  
-  // House page
+
   &__house {
     &__intro {
       margin-top: 1.75rem;
     }
-    
+
     &__title {
       margin-bottom: ($spacer * 1.5);
 
@@ -69,19 +90,10 @@
         font-size: 62.5%;
       }
     }
-    
+
     &__content {
       p {
         font-size: rem(18);
-      }
-    }
-    
-    &__next {
-      a {
-        display: block;
-        color: $white;
-        padding: ($spacer * 1.5) $spacer 0;
-        text-decoration: none;
       }
     }
   }

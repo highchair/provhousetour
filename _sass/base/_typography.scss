@@ -40,13 +40,8 @@ h4, .h4{
 }
 
 h5, .h5,
-.lead,
-.nav__link {
-  @include one-element-size(h5);
-}
-
-h5, .h5,
 .lead {
+  @include one-element-size(h5);
   margin-bottom: $vertical-rhythm;
 }
 
@@ -91,7 +86,7 @@ dl,
 address,
 form {
   margin-bottom: $vertical-rhythm;
-  
+
   &:last-child {
     margin-bottom: 0;
   }
