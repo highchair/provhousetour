@@ -1,83 +1,20 @@
           <div class="nav__container fixed-top ">
-            <nav id="main-nav" class="main__nav navbar navbar-expand-md nav u__container--large">
+            <nav id="main-nav" class="main__nav navbar navbar-expand-xs nav u__container--large">
               <button class="navbar-toggler nav__button" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="nav__button__icon">&equiv;</span>
                 <span class="nav__button__text"><span class="sr-only">Open the </span>Menu</span>
               </button>
-              <a class="navbar-brand nav__logo" href="{{ site.baseurl | append: site.currenttour }}"><img src="{{ site.baseurl }}assets/img/PPS-logo-white-trans_240.png" alt="Providence Preservation Society"/></a>
+              <a class="navbar-brand nav__logo" href="{% link 2021/welcome.html %}"><img src="{{ site.baseurl }}assets/img/PPS-logo-white-trans_240.png" alt="Providence Preservation Society"/></a>
               <div class="collapse navbar-collapse nav__pane" id="navbarContent">
                 <ul class="navbar-nav nav__list" role="navigation">
                   <li class="nav-item nav__item">
-                    <a href="{{ site.baseurl | append: site.currenttour }}welcome/" class="nav-link nav__link primary">Welcome message</a>
+                    <a href="{% link 2021/welcome.html %}" class="nav-link nav__link primary">Welcome</a>
                   </li>
                   <li class="nav-item nav__item">
-                    <a href="{{ site.baseurl | append: site.currenttour }}history/" class="nav-link nav__link primary">Paterson Park History</a>
+                    <a href="{% link 2021/welcome.html %}#locations" class="nav-link nav__link primary">Locations</a>
                   </li>
-                  <li class="nav-item nav__item dropdown">
-                    <a class="nav-link dropdown-toggle nav__link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Houses: 
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li class="dropdown-item">
-                        <a href="{{ site.baseurl | append: site.currenttour }}39-oriole/" class="nav-link nav__link">
-                          <span class="tour__nav__address">39 Oriole Avenue</span>
-                          <span class="tour__nav__house-name">Amey and Edward Harris House</span>
-                        </a>
-                      </li>
-                      <li class="dropdown-item">
-                        <a href="{{ site.baseurl | append: site.currenttour }}40-oriole/" class="nav-link nav__link">
-                          <span class="tour__nav__address">40 Oriole Avenue</span>
-                          <span class="tour__nav__house-name">Ella and John Allen House </span>
-                        </a>
-                      </li>
-                      <li class="dropdown-item">
-                        <a href="{{ site.baseurl | append: site.currenttour }}43-oriole/" class="nav-link nav__link">
-                          <span class="tour__nav__address">43 Oriole Avenue</span>
-                          <span class="tour__nav__house-name">Ella and Ozro Heath House</span>
-                        </a>
-                      </li>
-                      <li class="dropdown-item">
-                        <a href="{{ site.baseurl | append: site.currenttour }}44-oriole/" class="nav-link nav__link">
-                          <span class="tour__nav__address">44 Oriole Avenue</span>
-                          <span class="tour__nav__house-name">Clara and John Hambly House </span>
-                        </a>
-                      </li>
-                      <li class="dropdown-item">
-                        <a href="{{ site.baseurl | append: site.currenttour }}90-oriole/" class="nav-link nav__link">
-                          <span class="tour__nav__address">90 Oriole Avenue</span>
-                          <span class="tour__nav__house-name">Mary and Matthew Armington House</span>
-                        </a>
-                      </li>
-                      <li class="dropdown-item">
-                        <a href="{{ site.baseurl | append: site.currenttour }}603-angell/" class="nav-link nav__link">
-                          <span class="tour__nav__address">603 Angell Street</span>
-                          <span class="tour__nav__house-name">Charles Richards House</span>
-                        </a>
-                      </li>
-                      <li class="dropdown-item">
-                        <a href="{{ site.baseurl | append: site.currenttour }}610-angell" class="nav-link nav__link">
-                          <span class="tour__nav__address">610 Angell Street</span>
-                          <span class="tour__nav__house-name">Frederick Anthony House</span>
-                        </a>
-                      </li>
-                      <li class="dropdown-item">
-                        <a href="{{ site.baseurl | append: site.currenttour }}626-angell/" class="nav-link nav__link">
-                          <span class="tour__nav__address">626 Angell Street</span>
-                          <span class="tour__nav__house-name">Harold Stone House</span>
-                        </a>
-                      </li>
-                      <li class="dropdown-item">
-                        <a href="{{ site.baseurl | append: site.currenttour }}3-nisbet/" class="nav-link nav__link">
-                          <span class="tour__nav__address">3 Nisbet Street</span>
-                          <span class="tour__nav__house-name">Humphrey Almy/William Nisbet House</span>
-                        </a>
-                      </li>
-                      <li class="dropdown-item">
-                        <a href="{{ site.baseurl | append: site.currenttour }}map/" class="nav-link nav__link">
-                          <span class="tour__nav__address">Google Map of All Houses + Wayland Square</span>
-                        </a>
-                      </li>
-                    </ul>
+                  <li class="nav-item nav__item">
+                    <a href="{% link 2021/map.html %}" class="nav-link nav__link primary">Map</a>
                   </li>
                 </ul>
               </div>
