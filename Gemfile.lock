@@ -16,7 +16,7 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
-    execjs (2.8.1)
+    execjs (2.7.0)
     extras (0.3.0)
       forwardable-extended (~> 2.5)
     fastimage (2.2.6)
@@ -107,7 +107,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll (>= 3.8.5)
+  execjs (= 2.7.0)
+  jekyll (>= 3.9.1)
   jekyll-assets (>= 3.0.0)
   jekyll-autoprefixer (>= 1.0.0)
   jekyll-watch (>= 2.2.1)
