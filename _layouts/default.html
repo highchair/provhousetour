@@ -4,13 +4,14 @@
   {% include head.html %}
 
   <body class="layout__{{ page.layout }} page__{{ page.body-class }}">
+    {% if page.body-bg-img %}
     <div class="page__cover">
-      <img class="img--rwd" src="{{ site.baseurl }}assets/img/FOG_banner_garden-only.jpg" alt="" />
-      <p class="page__subtitle">Providence Preservation Society</p>
-      <h1 class="page__title display-3">Festival of Gardens</h1>
+      <img src="/assets/img/{{ page.body-bg-img }}" alt="" />
     </div>
-    {% include navigation.html %}
+    {% endif %}
     
+    {% include navigation.html %}
+
     {{ content }}
 
     {% include footer.html %}

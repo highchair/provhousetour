@@ -4,13 +4,14 @@
             - nav and nav__*: Our BEM style hooks
             - navbar and nav-*: Bootstrap classes, unstyled in our project
           {% endcomment %}
-          <div class="nav__container">
+          <header class="nav__container">
             <nav id="main-nav" class="main__nav navbar navbar-expand-sm nav u__m-spacing">
               <button class="navbar-toggler nav__button" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="nav__button__icon">&equiv;</span>
                 <span class="nav__button__text"><span class="sr-only">Open the </span>Menu</span>
               </button>
               <a class="navbar-brand nav__logo" href="{{ site.baseurl }}"><img src="{{ site.baseurl }}assets/img/PPS-logo-white-trans_240.png" alt="Providence Preservation Society"/></a>
+              {% comment %}
               <div class="collapse navbar-collapse nav__pane" id="navbarContent">
                 <ul class="navbar-nav nav__list" role="navigation">
                   <li class="nav-item nav__item">
@@ -21,5 +22,7 @@
                   </li>
                 </ul>
               </div>
+              {% endcomment %}
             </nav>
-          </div>
+          </header
+          >
