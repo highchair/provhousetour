@@ -1,5 +1,5 @@
 title: PPS Festival of Historic Houses
-description: June 13, 15-16, 2019 in the Paterson Park neighborhood of Providence, RI
+description: A yearly exploration of a different neighborhood in Providence, RI
   
 markdown: kramdown
 highlighter: rouge
@@ -14,7 +14,7 @@ redcarpet:
   ]
 
 baseurl: '/'
-currenttour: '2020/'
+currenttour: '2022/'
 port: 5010
 url: //www.providencehousetour.com
 twitter_handle: pvdpreservation
@@ -44,8 +44,7 @@ exclude: [
   'Gemfile',
   'Gemfile.lock',
   'LICENSE',
-  'README',
-  '2019'
+  'README'
 ]
 
 
