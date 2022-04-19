@@ -1,15 +1,19 @@
 
 .footer {
-  background-color: $white;
-  color: gray("700");
+  background-color: gray("700");
+  color: $white;
   text-align: center;
   
   .page__title {
-    color: $pps-green;
+    color: $tint__pps-blue__lightest;
   }
   
   p {
     margin-bottom: 0;
+  }
+  
+  a {
+    color: $white;
   }
   
   address {}

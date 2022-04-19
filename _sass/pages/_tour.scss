@@ -19,7 +19,7 @@
     }
 
     &__link {
-      background-color: $tint__pps-green__dark;
+      background-color: $tint__pps-blue__dark;
       padding-left: $spacer;
       padding-right: $spacer;
 
@@ -40,7 +40,7 @@
   // New tour nav elements
   &__nav {
     &__address {
-      color: $tint__pps-green__lightest;
+      color: $tint__pps-blue__lightest;
       display: block;
       font-family: Helvetica, sans-serif;
       font-size: 87.5%;
