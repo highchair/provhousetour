@@ -7,12 +7,13 @@
 
   // Actually one level above .nav
   &__container {
-    background-color: rgba($tint__pps-blue__dark, 0.92);
+    background-color: rgba($pps-green, 0.92);
     
     @include media-breakpoint-up(md) {
       position: sticky;
       position: -webkit-sticky;
       top: 0;
+      z-index: 10;
     }
   }
   
@@ -42,10 +43,10 @@
   }
   
   &__logo {
-    height: 46px;
+    height: 56px;
 
     img {
-      height: 58px;
+      height: 64px;
     }
   }
   
@@ -65,7 +66,7 @@
   &__list &__link {
     // Hover off effect
     opacity: 1;
-    transition: all 400ms ease 400ms;
+    transition: all 250ms ease;
   }
  
   &__list:hover &__link:not(:hover) {
@@ -83,8 +84,10 @@
     color: $white;
     background-color: transparent;
     display: block;
+    font-size: 112.5%;
     font-weight: $font-weight-bold;
-    padding: $spacer $spacer ($spacer * 0.75);
+    line-height: 1;
+    padding: $spacer;
     text-decoration: none;
     
     // Already set by BS4 inside .navbar-expand-md .navbar-nav .nav-link
@@ -95,17 +98,12 @@
     
     @include hover-focus {
       color: color("yellow");
-      background-color: $black;
+      background-color: gray("900");
     }
     
-    &.primary.active {
-      color: $white;
-      background-color: theme-color("primary");
-    }
-    
-    &.green.active {
-      color: $black;
-      background-color: color("green");
+    &.active {
+      color: gray("900");
+      background-color: $tint__pps-green__lightest;
     }
   }
   

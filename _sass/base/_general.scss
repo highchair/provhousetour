@@ -45,7 +45,7 @@ body {
   
   &__container--large {
     margin: 0 auto;
-    max-width: em(1230);
+    max-width: $max-width__large;
   }
 
   // No max width, just padding

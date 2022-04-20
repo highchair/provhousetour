@@ -27,11 +27,7 @@
   }
   
   &__primary {
-    background-color: color("blue");
-  }
-  
-  &__purple {
-    background-color: color("purple");
+    background-color: color("green");
   }
   
   // Light themes
@@ -43,8 +39,12 @@
     background-color: $white;
   }
   
-  &__blue {
-    background-color: $tint__pps-blue__lightest;
+  &__white-trans {
+    background: rgba($white, .92);
+  }
+  
+  &__green {
+    background-color: $tint__pps-green__lightest;
   }
   
   &__denim {
