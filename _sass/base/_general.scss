@@ -98,6 +98,7 @@ body {
   // Max-width for text content
   &__content {
     max-width: $max-width__text;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
