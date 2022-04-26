@@ -14,13 +14,13 @@
               <div class="collapse navbar-collapse nav__pane" id="navbarContent">
                 <ul class="navbar-nav nav__list" role="navigation">
                   <li class="nav-item nav__item">
+                    <a href="{% link programs.html %}" class="nav-link nav__link{% if page.permalink == '/programs/' %} active{% endif %}">Public Programs</a>
+                  </li>
+                  <li class="nav-item nav__item">
                     <a href="{% link preview.html %}" class="nav-link nav__link{% if page.permalink == '/preview/' %} active{% endif %}">Preview Party</a>
                   </li>
                   <li class="nav-item nav__item">
                     <a href="{% link tours.html %}" class="nav-link nav__link{% if page.permalink == '/tours/' %} active{% endif %}">Tours & Tickets</a>
-                  </li>
-                  <li class="nav-item nav__item">
-                    <a href="{% link programs.html %}" class="nav-link nav__link{% if page.permalink == '/programs/' %} active{% endif %}">Public Programs</a>
                   </li>
                 </ul>
               </div>
