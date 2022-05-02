@@ -75,6 +75,16 @@ body {
     );
   }
   
+  &__hspacing {
+    @include fluid-units(
+      'padding-left' 'padding-right',
+      $gutter-min,
+      $gutter-max,
+      strip-unit(rem(bp(small))),
+      strip-unit(rem(bp(x-large)))
+    );
+  }
+  
   &__vspacing {
     @include fluid-units(
       'padding-top' 'padding-bottom',
