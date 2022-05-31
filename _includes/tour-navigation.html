@@ -1,21 +1,13 @@
           <div class="nav__container fixed-top ">
-            <nav id="main-nav" class="main__nav navbar navbar-expand-xs nav u__container--large">
+            <nav id="main-nav" class="main__nav navbar nav">
               <button class="navbar-toggler nav__button" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="nav__button__icon">&equiv;</span>
+                <span class="nav__button__icon" aria-hidden="true">&equiv;</span>
                 <span class="nav__button__text"><span class="sr-only">Open the </span>Menu</span>
               </button>
-              <a class="navbar-brand nav__logo" href="{% link 2021/welcome.html %}"><img src="{{ site.baseurl }}assets/img/PPS-logo-white-trans_240.png" alt="Providence Preservation Society"/></a>
+              <a class="navbar-brand nav__logo" href="{{ site.baseurl }}{{ site.currenttour }}"><img src="{{ site.baseurl }}assets/img/PPS-logo-white-trans_240.png" alt="Providence Preservation Society"/></a>
               <div class="collapse navbar-collapse nav__pane" id="navbarContent">
-                <ul class="navbar-nav nav__list" role="navigation">
-                  <li class="nav-item nav__item">
-                    <a href="{% link 2021/welcome.html %}" class="nav-link nav__link primary">Welcome</a>
-                  </li>
-                  <li class="nav-item nav__item">
-                    <a href="{% link 2021/welcome.html %}#locations" class="nav-link nav__link primary">Locations</a>
-                  </li>
-                  <li class="nav-item nav__item">
-                    <a href="{% link 2021/map.html %}" class="nav-link nav__link primary">Map</a>
-                  </li>
+                <ul class="navbar-nav nav__list" role="navigation" aria-label="Primary">
+                  {% include tour-mini-navigation.html %}
                 </ul>
               </div>
             </nav>

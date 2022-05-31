@@ -1,0 +1,17 @@
+---
+layout: tour
+body-class: house
+---
+
+<div class="u__spacing opener location">
+  <h1 class="h2 location__title">
+    <span class="location__address">{{ page.house-title }}</span>
+    {% if page.house-name %}<span class="location__house-name">{{ page.house-name }}</span>{% endif %}
+  </h1>
+  <p class="lead">{{ page.house-detail }}</p>
+  
+  {{ page.house-description | markdownify }}
+
+</div>
+
+{% include next-location.html %}
