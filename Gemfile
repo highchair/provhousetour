@@ -11,6 +11,8 @@ gem "redcarpet", ">=3.1"
 gem "rake", ">=13.0.0"
 gem "sass",">=3.7.4"
 gem "sass-globbing",">=1.1.0"
+gem "kramdown", ">= 2.3.0"
+gem "kramdown-parser-gfm"
 gem "uglifier",">=4.1.0"
 gem "nokogiri", ">= 1.13.4"
 # needed for an incompatibility issue with Jekyll Assets: https://github.com/envygeeks/jekyll-assets/issues/622
