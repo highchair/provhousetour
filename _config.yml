@@ -12,6 +12,8 @@ redcarpet:
     'superscript',
     'with_toc_data'
   ]
+kramdown:
+  syntax_highlighter: redcarpet
 
 baseurl: '/'
 currenttour: '2022/'
