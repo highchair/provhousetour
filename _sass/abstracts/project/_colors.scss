@@ -27,6 +27,8 @@ $pps-denim__h: 195;
 
 $pps-green: #7e9375;
 $pps-green__h: 102;
+$pps-green__s: 12;
+$pps-green__b: 52;
 
 $pps-yellow: #CACF85;
 $pps-yellow__h: 64;
@@ -39,6 +41,8 @@ $pps-purple__h: 263;
 $tint__pps-blue__lightest: hsl($pps-blue__h, 100, 94); // #d6ebff: 6.67 with gray-600
 $tint__pps-blue__dark: hsl($pps-blue__h, 62, 28); // #1b4774: 5.02 ratio with gray-300
 
+$tint__pps-green__dark: hsl($pps-green__h, 10, 32);
+$tint__pps-green__medium: hsl($pps-green__h, 32, 85);
 $tint__pps-green__lightest: hsl($pps-green__h, 90, 95);
 
 // Generic variables
