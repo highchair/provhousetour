@@ -110,4 +110,15 @@
   &__spacer {
     height: em(56);
   }
+  
+  // Drop downs
+  &__dropdown {
+    
+    > a {
+      border-left: 4px solid $tint__pps-green__dark;
+      color: $gray-900;
+      font-weight: normal;
+      margin-left: 1rem;
+    }
+  }
 }

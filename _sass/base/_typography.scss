@@ -92,6 +92,16 @@ form {
   }
 }
 
+ul {
+  margin-left: 1.5rem;
+  padding-left: 0;
+  
+  nav &,
+  &[role="navigation"] {
+    margin-left: 0;
+  }
+}
+
 // Nested lists should not have margin bottom
 //ol ol,
 //ul ul,

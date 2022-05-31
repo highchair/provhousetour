@@ -49,6 +49,12 @@ body {
   }
 
   // No max width, just padding
+  &__spacing--sm {
+    @extend %fluid-gutter;
+    padding-top: $vertical-rhythm;
+    padding-bottom: $vertical-rhythm;
+  }
+  
   &__spacing {
     @extend %fluid-gutter;
     padding-top: ($vertical-rhythm * 2);
