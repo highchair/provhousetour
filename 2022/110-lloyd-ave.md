@@ -4,9 +4,9 @@ title: 110 Lloyd Avenue | PPS FHH 2022
 permalink: /2022/110-lloyd-ave/
 img-path: 110-lloyd.jpg
 
-house-title: 110 Lloyd Avenue
-house-name: William H. Phillips House
-house-detail: '<i>1902, unknown builder</i><br>Owners: Sally Barker and Steven Hamburg (Front Garden Only)'
+house-title: '110 Lloyd Avenue'
+house-name: '(Front Garden Only) William H. Phillips House'
+house-detail: '<i>1902, unknown builder</i><br>Owners: Sally Barker and Steven Hamburg'
 house-description: 'A blend of different styles, notably Shingle, Queen Anne, and Prairie, defines the William Phillips House. Built in 1902, the house was occupied by the Phillips family until 1942. William was the secretary and treasurer of the Providence Washington Insurance Company, with an office at 20 Market Square. The Phillips family included two children, Warren and Annie, and a servant, Sarah Johnson of Virginia.  
 
 

@@ -4,8 +4,8 @@ title: 71 Prospect Street | PPS FHH 2022
 permalink: /2022/71-prospect-st/
 img-path: 71-prospect.jpg
 
-house-title: 71 Prospect Street
-house-name: First Church of Christ, Scientist, Providence
+house-title: '71 Prospect Street (restrooms)'
+house-name: 'First Church of Christ, Scientist, Providence'
 house-detail: '<i>1906-1913, Howard Hoppin, Hoppin & Field architects</i>'
 house-description: '**Registration Center**, with Guest Check-in and Restrooms
 

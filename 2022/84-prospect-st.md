@@ -4,9 +4,9 @@ title: 84 Prospect Street | PPS FHH 2022
 permalink: /2022/84-prospect-st/
 img-path: 84-prospect.jpg
 
-house-title: 84 Prospect Street
-house-name: 'Mary Elizabeth & Henry Dexter Sharpe House'
-house-detail: '<i>1921, Parker, Thomas & Rice architects</i><br>Marion Coffin, landscape architect (Garden Only)'
+house-title: '84 Prospect Street'
+house-name: '(Garden Only) Mary Elizabeth & Henry Dexter Sharpe House'
+house-detail: '<i>1921, Parker, Thomas & Rice architects</i><br>Marion Coffin, landscape architect'
 house-description: 'Known as “Rochambeau House” and in use by Brown University’s Department of French Studies and Department of Hispanic Studies, the house was the longtime residence of the Sharpe family. Mrs. Sharpe was closely involved in the design of both the house and its grounds. She desired a house that was as authentic as possible – many interior features were imported from France – and that struck a balance between France’s rural chateaux and sophisticated urban dwellings.
 
 
