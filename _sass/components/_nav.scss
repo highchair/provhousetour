@@ -63,13 +63,13 @@
   &__list {}
   
   // Sibling hover effect
-  &__list &__link {
+  &--public &__list &__link {
     // Hover off effect
     opacity: 1;
     transition: all 250ms ease;
   }
  
-  &__list:hover &__link:not(:hover) {
+  &--public &__list:hover &__link:not(:hover) {
     // Hover on effect
     filter: blur(1px);
     opacity: 0.6;

@@ -53,6 +53,10 @@ $navbar-height: 64px;
       &:focus {
         color: $pps-yellow;
         background-color: $tint__pps-green__dark;
+        
+        .tour__nav__house-name {
+          color: $white;
+        }
       }
       
       &[aria-current="page"] {

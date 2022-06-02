@@ -91,9 +91,10 @@ body {
     );
   }
   
-  &__vspacing {
+  &__vspacing,
+  &__vspacing-t {
     @include fluid-units(
-      'padding-top' 'padding-bottom',
+      'padding-top',
       $vertical-min,
       $vertical-max,
       strip-unit(rem(bp(small))),
@@ -101,6 +102,7 @@ body {
     );
   }
   
+  &__vspacing,
   &__vspacing-b {
     @include fluid-units(
       'padding-bottom',
