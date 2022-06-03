@@ -1,6 +1,6 @@
 ---
 layout: location
-title: 103 Lloyd Avenue | PPS FHH 2022
+title: 103 Lloyd Avenue
 permalink: /2022/103-lloyd-ave/
 img-path: 103-lloyd.jpg
 

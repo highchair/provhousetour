@@ -1,6 +1,6 @@
 ---
 layout: location
-title: 58 Keene Street | PPS FHH 2022
+title: 58 Keene Street
 permalink: /2022/58-keene-st/
 img-path: 58-keene.jpg
 

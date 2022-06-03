@@ -1,6 +1,6 @@
 ---
 layout: location
-title: 84 Prospect Street | PPS FHH 2022
+title: 84 Prospect Street
 permalink: /2022/84-prospect-st/
 img-path: 84-prospect.jpg
 

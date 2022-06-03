@@ -1,6 +1,6 @@
 ---
 layout: location
-title: 71 Prospect Street | PPS FHH 2022
+title: 71 Prospect Street
 permalink: /2022/71-prospect-st/
 img-path: 71-prospect.jpg
 

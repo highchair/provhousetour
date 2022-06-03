@@ -1,8 +1,8 @@
 ---
 layout: location
-title: 89 Keene Street | PPS FHH 2022
+title: 89 Keene Street
 permalink: /2022/89-keene-st/
-img-path: 89-keene.jpg
+img-path: 89-keene.jpg?cb=20220602-2153
 
 house-title: 89 Keene Street
 house-name: Mary P. & William H. Clewley House

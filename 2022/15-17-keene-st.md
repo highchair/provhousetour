@@ -1,6 +1,6 @@
 ---
 layout: location
-title: 15-17 Keene Street | PPS FHH 2022
+title: 15-17 Keene Street
 permalink: /2022/15-17-keene-st/
 img-path: 15-17-keene.jpg
 

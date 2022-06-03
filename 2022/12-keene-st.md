@@ -1,6 +1,6 @@
 ---
 layout: location
-title: 12 Keene Street | PPS FHH 2022
+title: 12 Keene Street
 permalink: /2022/12-keene-st/
 img-path: 12-keene.jpg
 

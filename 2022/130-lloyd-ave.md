@@ -1,6 +1,6 @@
 ---
 layout: location
-title: 130 Lloyd Avenue | PPS FHH 2022
+title: 130 Lloyd Avenue
 permalink: /2022/130-lloyd-ave/
 img-path: 130-lloyd.jpg
 

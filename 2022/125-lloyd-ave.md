@@ -1,6 +1,6 @@
 ---
 layout: location
-title: 125 Lloyd Avenue | PPS FHH 2022
+title: 125 Lloyd Avenue
 permalink: /2022/125-lloyd-ave/
 img-path: 125-lloyd.jpg
 

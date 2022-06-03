@@ -1,6 +1,6 @@
 ---
 layout: location
-title: 110 Lloyd Avenue | PPS FHH 2022
+title: 110 Lloyd Avenue
 permalink: /2022/110-lloyd-ave/
 img-path: 110-lloyd.jpg
 
