@@ -1,19 +1,20 @@
+# bundle install
+
 source "https://rubygems.org"
 
-gem "jekyll", ">=3.9.1"
-gem "jekyll-watch", ">=2.2.1"
-gem 'jekyll-autoprefixer', ">=1.0.0"
-gem "jekyll-assets", ">=3.0.0"
-gem "execjs", "=2.7.0"
-gem "liquid", ">=4.0.3"
+gem "jekyll", ">=4.2.0"
+gem "jekyll-watch", ">=2.0.0"
+gem "jekyll-autoprefixer", ">=1.0.0"
+gem "execjs", "=2.7.0"  # Locking due to an issue affecting node version checking
+gem "jekyll-github-metadata"
+gem "jekyll-responsive-image", ">=1.5.0"
+gem "liquid", ">=4.0.0"
 gem "pygments.rb", ">=1.2.1"
-gem "redcarpet", ">=3.1"
-gem "rake", ">=13.0.0"
-gem "sass",">=3.7.4"
-gem "sass-globbing",">=1.1.0"
 gem "kramdown", ">= 2.3.0"
-gem "kramdown-parser-gfm"
+gem "rake", ">=10.0.0"
+gem "sassc",">=2.4.0"
 gem "uglifier",">=4.1.0"
 gem "nokogiri", ">= 1.13.4"
-# needed for an incompatibility issue with Jekyll Assets: https://github.com/envygeeks/jekyll-assets/issues/622
-gem "sprockets", "~> 3.7"
+gem "activesupport", ">=6.0.3.1"
+gem "webrick", "~> 1.7"
+gem "jekyll-image-size", "~> 1.2"
