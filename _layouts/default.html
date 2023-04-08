@@ -6,13 +6,19 @@
   <body class="layout__{{ page.layout }} page__{{ page.body-class }}">
     {% if page.body-bg-img %}
     <div class="page__cover">
-      <img src="/assets/img/{{ page.body-bg-img }}" alt="" />
+      <img src="{{ site.baseurl }}assets/img/{{ page.body-bg-img }}" alt="" />
     </div>
     {% endif %}
-    {% comment %}
+
     {% include navigation.html %}
-    {% endcomment %}
-    {{ content }}
+
+    <main class="page__opener u__spacing">
+      <article>
+        {{ content }}
+
+        {% include sponsors.html %}
+      </article>
+    </main>
 
     {% include footer.html %}
     {% include scripts.html %}

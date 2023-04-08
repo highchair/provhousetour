@@ -12,13 +12,13 @@
   <meta name="description" content="{{ site.description }}">
 
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-  <link type="text/css" rel="stylesheet" href="/assets/css/main.css?refresh=20220602-21:58">
+  <link type="text/css" rel="stylesheet" href="{{ site.baseurl }}assets/css/main.css?cb={{ page.date | date:'%Y%m%d-%T' }}">
 
-  <link rel="apple-touch-icon" sizes="240x240" href="/assets/img/PPS-logo-dark_trans.png">
-  <link rel="apple-touch-icon" sizes="77x77" href="/assets/img/PPS-apple-touch-77.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
-  <meta name="msapplication-TileImage" content="/assets/img/PPS-metro-144.png">
-  <link rel="shortcut icon" href="/assets/img/favicon.ico">
+  <link rel="apple-touch-icon" sizes="240x240" href="{% link assets/img/PPS-logo-dark_trans.png %}">
+  <link rel="apple-touch-icon" sizes="77x77" href="{% link assets/img/PPS-apple-touch-77.png %}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{% link assets/img/favicon-16x16.png %}">
+  <meta name="msapplication-TileImage" content="{% link assets/img/PPS-metro-144.png %}">
+  <link rel="shortcut icon" href="{% link assets/img/favicon.ico %}">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3259148-4"></script>

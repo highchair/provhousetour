@@ -1,26 +1,12 @@
 title: PPS Festival of Historic Houses
 description: A yearly exploration of a different neighborhood in Providence, RI
-  
-markdown: kramdown
-highlighter: rouge
-redcarpet:
-  extensions: [
-    'no_intra_emphasis',
-    'fenced_code_blocks',
-    'autolink',
-    'strikethrough',
-    'superscript',
-    'with_toc_data'
-  ]
-kramdown:
-  syntax_highlighter: redcarpet
 
-baseurl: '/'
-currenttour: '2022/'
+baseurl: '/2023preview/'
+currenttour: '2023/'
 port: 5010
 url: //www.providencehousetour.com
 twitter_handle: pvdpreservation
-
+eventbrite: https://www.eventbrite.com/e/2023-festival-of-historic-houses-tickets-602984401577
 
 # Define some defaults
 defaults:
@@ -32,6 +18,9 @@ defaults:
 
 # Permalink Configuration
 permalink: /blog/:year/:month/:title
+
+# Setting relative permalink to false. See http://jekyllrb.com/docs/upgrading/.
+relative_permalinks: false
 
 # Post types
 #collections:
@@ -50,13 +39,22 @@ exclude: [
   'assets/sponsors/not-used-yet/'
 ]
 
-
-# Setting relative permalink to false. See http://jekyllrb.com/docs/upgrading/.
-relative_permalinks: false
+markdown: kramdown
+highlighter: rouge
+redcarpet:
+  extensions: [
+    'no_intra_emphasis',
+    'fenced_code_blocks',
+    'autolink',
+    'strikethrough',
+    'superscript',
+    'with_toc_data'
+  ]
+kramdown:
+  syntax_highlighter: redcarpet
 
 sass:
   sass_dir: _sass
-  
 
 # Plugins and extras
 plugins:
