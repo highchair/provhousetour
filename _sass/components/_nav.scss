@@ -7,7 +7,7 @@
 
   // Actually one level above .nav
   &__container {
-    background-color: rgba($pps-green, 0.92);
+    background-color: rgba($pps-yellow, 0.92);
     
     @include media-breakpoint-up(md) {
       position: sticky;
@@ -16,19 +16,19 @@
       z-index: 10;
     }
   }
-  
+
   &__button {
     border-radius: 0;
     padding: 0;
     margin: 0.75rem -0.5rem 0.5rem;
-    
+
     &__icon,
     &__text {
-      color: $white;
+      color: $tint__pps-yellow__dark;
       display: inline-block;
       vertical-align: middle;
     }
-    
+
     &__icon {
       font-size: 2.5rem;
       padding: 0 0.5rem 0 1rem;
@@ -36,20 +36,33 @@
     
     &__text {
       font-size: 1.125rem;
-      padding: 0.25rem 0.5rem 0 0;
       letter-spacing: $kerning;
       text-transform: uppercase;
     }
   }
-  
+
   &__logo {
+    display: flex;
     height: 56px;
+    text-decoration: none;
 
     img {
       height: 64px;
     }
   }
-  
+
+  &__title {
+    color: $gray-900;
+    display: none;
+    font-size: 112.5%;
+    line-height: 1;
+    padding: 0.5em 0.75em;
+
+    @include media-breakpoint-up(lg) {
+      display: block;
+    }
+  }
+
   // Collapsible area for mobile
   &__pane {
     justify-content: center;
@@ -81,7 +94,7 @@
   
   // Anchor
   &__link {
-    color: $white;
+    color: $tint__pps-yellow__dark;
     background-color: transparent;
     display: block;
     font-size: 112.5%;
@@ -103,7 +116,7 @@
     
     &.active {
       color: gray("900");
-      background-color: $tint__pps-green__lightest;
+      background-color: $tint__pps-yellow__lightest;
     }
   }
   
@@ -115,7 +128,7 @@
   &__dropdown {
     
     > a {
-      border-left: 4px solid $tint__pps-green__dark;
+      border-left: 4px solid $tint__pps-yellow__dark;
       color: $gray-900;
       font-weight: normal;
       margin-left: 1rem;

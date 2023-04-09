@@ -44,15 +44,15 @@ $navbar-height: 64px;
     }
 
     &__link {
-      background-color: $tint__pps-green__medium;
-      color: $tint__pps-green__dark;
+      background-color: $tint__pps-yellow__medium;
+      color: $tint__pps-yellow__dark;
       padding-left: $spacer;
       padding-right: $spacer;
 
       &:hover,
       &:focus {
         color: $pps-yellow;
-        background-color: $tint__pps-green__dark;
+        background-color: $tint__pps-yellow__dark;
         
         .tour__nav__house-name {
           color: $white;

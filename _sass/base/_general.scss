@@ -23,6 +23,16 @@ body {
   );
 }
 
+%fluid-vertical {
+  @include fluid-units(
+    'padding-top' 'padding-bottom',
+    $vertical-min,
+    $vertical-max,
+    strip-unit(rem(bp(small))),
+    strip-unit(rem(bp(large)))
+  );
+}
+
 // Flexible gutter helper
 %margin-right {
   @include fluid-units('margin-right', $gutter-min, $gutter-max, $min-vw, $max-vw);
@@ -39,13 +49,22 @@ body {
 .u {
 
   &__container {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     max-width: $max-width;
   }
-  
+
   &__container--large {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     max-width: $max-width__large;
+  }
+
+  // Max-width for text content
+  &__content {
+    max-width: $max-width__text;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   // No max width, just padding
@@ -54,13 +73,12 @@ body {
     padding-top: $vertical-rhythm;
     padding-bottom: $vertical-rhythm;
   }
-  
+
   &__spacing {
     @extend %fluid-gutter;
-    padding-top: ($vertical-rhythm * 2);
-    padding-bottom: ($vertical-rhythm * 2);
+    @extend %fluid-vertical;
   }
-  
+
   &__m-spacing {
     @include fluid-units(
       'margin-left' 'margin-right',
@@ -70,18 +88,18 @@ body {
       strip-unit(rem(bp(x-large)))
     );
   }
-  
+
   &__mb-spacing {
     @include fluid-units(
       'margin-bottom',
-      $gutter-min,
-      $gutter-max,
+      $vertical-min,
+      $vertical-max,
       strip-unit(rem(bp(small))),
       strip-unit(rem(bp(x-large)))
     );
   }
-  
-  &__hspacing {
+
+  &__h-spacing {
     @include fluid-units(
       'padding-left' 'padding-right',
       $gutter-min,
@@ -90,7 +108,7 @@ body {
       strip-unit(rem(bp(x-large)))
     );
   }
-  
+
   &__vspacing,
   &__vspacing-t {
     @include fluid-units(
@@ -111,12 +129,5 @@ body {
       strip-unit(rem(bp(small))),
       strip-unit(rem(bp(x-large)))
     );
-  }
-  
-  // Max-width for text content
-  &__content {
-    max-width: $max-width__text;
-    margin-left: auto;
-    margin-right: auto;
   }
 }

@@ -1,7 +1,7 @@
 title: PPS Festival of Historic Houses
 description: A yearly exploration of a different neighborhood in Providence, RI
 
-baseurl: '/2023preview/'
+baseurl: '/'
 currenttour: '2023/'
 port: 5010
 url: //www.providencehousetour.com

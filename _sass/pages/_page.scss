@@ -1,11 +1,11 @@
 .page {
-  
+
   &__cover,
   &__cover img {
     width: 100%;
     height: 110vh;
   }
-  
+
   &__cover {
     position: fixed;
     top: 0;
@@ -27,9 +27,10 @@
       right: 0;
       bottom: 0;
       object-fit: cover;
+      object-position: top;
     }
   }
-  
+
   &__opener {
     //@include media-breakpoint-up(lg) {
     //  margin-top: 56vh;
