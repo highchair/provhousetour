@@ -1,20 +1,23 @@
 .img {
-  &--rwd {
-    // The BS4 framework is not opinionated
-    // Add this class to force an image to be responsive
-    display: block;
-    max-width: 100%;
+
+  // Tour page welcome for City Seal
+  &__background {
+    opacity: 0.18;
+    position: absolute;
+    top: 1.5em;
+    right: 0;
+    width: 65%;
   }
-  
+
   &__break {
     margin-bottom: 0;
-    
+
     img {
       height: 60vh; // Max the height of the image to about half the viewport
       width: 100%;
       object-fit: cover;
     }
-    
+
     + .u__m-spacing {
       margin-top: 0;
     }
