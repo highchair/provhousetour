@@ -5,62 +5,43 @@ $navbar-height: 64px;
 // Navigation tweaks
 /*body*/ .layout__tour,
 .layout__location {
-  
-  > * {
-    margin: 0 auto;
-    max-width: 800px;
-  }
-
-  .navbar {
-    overflow: visible;
-    align-items: flex-start;
-    height: $navbar-height;
-  }
+  max-width: 960px;
+  margin: 0 auto;
 
   .nav {
-    
-    &__logo {
-      height: 84px;
-      padding: 0;
-    
-      img {
-        height: 84px;
-        margin: -4px -6px 0 0;
-      }
-    }
-    
-    &__pane {
-      margin-top: -20px;
-      max-height: calc(100vh - #{$navbar-height});
-      overflow-x: scroll;
-    }
-    
+
     // Reset of the standard styles
     &__item {
-      
+
       &.dropdown {
-        border-left: 4px solid $pps-green;
+        border-left: 4px solid $tint__primary__dark;
       }
+    }
+
+    &__list {
+      padding-bottom: $spacer;
+      overflow-x: scroll;
+      max-height: calc(100vh - 60px);
     }
 
     &__link {
-      background-color: $tint__pps-yellow__medium;
-      color: $tint__pps-yellow__dark;
+      background-color: $tint__primary__lightest;
+      color: $tint__primary__dark;
       padding-left: $spacer;
       padding-right: $spacer;
 
       &:hover,
       &:focus {
-        color: $pps-yellow;
-        background-color: $tint__pps-yellow__dark;
+        color: $primary;
+        background-color: $tint__primary__dark;
         
         .tour__nav__house-name {
           color: $white;
         }
       }
-      
+
       &[aria-current="page"] {
-        color: $gray-700;
+        color: gray("700");
         cursor: default;
         background-color: $white;
       }
@@ -68,9 +49,20 @@ $navbar-height: 64px;
   }
 }
 
+// When in body copy over a certain color, change the bg color
+.bg__primary .nav__link {
+  background-color: $white;
+}
+
 .tour {
   // New tour nav elements
   &__nav {
+    &__label {
+      display: block;
+      font-size: 87.5%;
+      padding-bottom: 0.5rem;
+    }
+
     &__address {
       display: block;
       font-family: Helvetica, sans-serif;
@@ -79,8 +71,8 @@ $navbar-height: 64px;
     }
 
     &__house-name {
-      color: $gray-700;
       display: block;
+      color: $gray-700;
       font-size: 87.5%;
       padding-top: 0.25rem;
     }
@@ -88,16 +80,16 @@ $navbar-height: 64px;
 }
 
 .location {
-  
+
   &__title {}
-  
+
   &__address {
-    color: $pps-green;
+    color: $tint__primary__medium;
     display: block;
     font-family: Helvetica, sans-serif;
     font-size: 87.5%;
   }
-  
+
   &__house-name {
     display: block;
     font-size: 75%;

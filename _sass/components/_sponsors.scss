@@ -10,22 +10,27 @@
     align-items: center;
     padding: 0 1rem;
 
-    .layout__tour & {
-      padding-left: 0 !important;
-      padding-right: 0 !important;
-    }
+    //.layout__tour & {
+    //  padding-left: 0 !important;
+    //  padding-right: 0 !important;
+    //}
 
     // Kill the columns in the narrow Tour pages
-    .layout__tour &.row.tour-no-flex {
-      display: block;
-    }
+    //.layout__tour &.row.tour-no-flex {
+    //  display: block;
+    //}
 
     .layout__tour &.tour-no-flex .col {
       max-width: 100%;
     }
   }
 
-  img {
+  h3 {
+    margin-top: 1.25em;
+  }
+
+  img, 
+  .img {
     display: block;
     margin-left: auto;
     margin-right: auto;
