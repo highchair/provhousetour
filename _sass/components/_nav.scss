@@ -1,14 +1,17 @@
 // Navigation Bar
-// A mix oif custom styles (.nav) and BS4 classes (.navbar)
+// A mix of custom styles (.nav) and BS4 classes (.navbar)
+
+.main__nav {
+  width: 100%;
+}
 
 .nav {
-  //@extend %fluid-gutter; // for fluid left and right padding
   align-items: flex-start;
 
   // Actually one level above .nav
   &__container {
-    background-color: rgba($pps-yellow, 0.92);
-    
+    background-color: rgba($primary, 0.92);
+
     @include media-breakpoint-up(md) {
       position: sticky;
       position: -webkit-sticky;
@@ -24,7 +27,7 @@
 
     &__icon,
     &__text {
-      color: $tint__pps-yellow__dark;
+      color: $tint__primary__dark;
       display: inline-block;
       vertical-align: middle;
     }
@@ -33,7 +36,7 @@
       font-size: 2.5rem;
       padding: 0 0.5rem 0 1rem;
     }
-    
+
     &__text {
       font-size: 1.125rem;
       letter-spacing: $kerning;
@@ -52,7 +55,7 @@
   }
 
   &__title {
-    color: $gray-900;
+    color: gray("900");
     display: none;
     font-size: 112.5%;
     line-height: 1;
@@ -94,7 +97,7 @@
   
   // Anchor
   &__link {
-    color: $tint__pps-yellow__dark;
+    color: $tint__primary__dark;
     background-color: transparent;
     display: block;
     font-size: 112.5%;
@@ -102,34 +105,34 @@
     line-height: 1;
     padding: $spacer;
     text-decoration: none;
-    
+
     // Already set by BS4 inside .navbar-expand-md .navbar-nav .nav-link
     //@include media-breakpoint-up(lg) {
     //  padding-left: $navbar-nav-link-padding-x;
     //  padding-right: $navbar-nav-link-padding-x;
     //}
-    
+
     @include hover-focus {
-      color: color("yellow");
+      color: $primary;
       background-color: gray("900");
     }
-    
+
     &.active {
       color: gray("900");
-      background-color: $tint__pps-yellow__lightest;
+      background-color: $tint__primary__lightest;
     }
   }
-  
+
   &__spacer {
     height: em(56);
   }
-  
+
   // Drop downs
   &__dropdown {
-    
+
     > a {
-      border-left: 4px solid $tint__pps-yellow__dark;
-      color: $gray-900;
+      border-left: 4px solid $tint__primary__dark;
+      color: gray("900");
       font-weight: normal;
       margin-left: 1rem;
     }

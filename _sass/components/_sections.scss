@@ -12,52 +12,31 @@
   border: 3px solid $white;
 }
 .img-border__yellow {
-  border: 3px solid $tint__pps-yellow__lightest;
+  border: 3px solid $primary;
 }
 
 .bg {
-  
+
   &__cover {
     background: center center no-repeat $white;
     background-size: cover;
   }
-  
+
   &__fixed {
     background-attachment: fixed;
   }
-  
+
   // Primary and dark color themes
   // Using the darker version for accessibility
-  &__primary,
-  &__purple {
-    color: $white;
-    
-    a:not(.btn) {
-      color: $white;
-      
-      @include hover-focus {
-        color: $tint__pps-blue__lightest;
-      }
-    }
-  }
-  
   &__primary {
-    background-color: $pps-yellow;
+    background-color: $tint__primary__lightest;
   }
-  
+
   &__white {
     background-color: $white;
   }
-  
+
   &__white-trans {
     background: rgba($white, .92);
-  }
-  
-  &__yellow {
-    background-color: $tint__pps-yellow__lightest;
-  }
-  
-  &__denim {
-    background-color: $pps-denim;
   }
 }

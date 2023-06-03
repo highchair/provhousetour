@@ -37,13 +37,16 @@ $pps-purple: #514663;
 $pps-purple__h: 263;
 
 
-// Tints
-$tint__pps-blue__lightest: hsl($pps-blue__h, 100%, 94%); // #d6ebff: 6.67 with gray-600
-$tint__pps-blue__dark: hsl($pps-blue__h, 62%, 28%); // #1b4774: 5.02 ratio with gray-300
+// Colors for this year's theme
+$primary: $pps-yellow;
+$tint__primary__dark: hsl($pps-yellow__h, 53%, 28%);
+$tint__primary__medium: hsl($pps-yellow__h, 53%, 40%);
+$tint__primary__lightest: hsl($pps-yellow__h, 63%, 94%);
 
-$tint__pps-yellow__dark: hsl($pps-yellow__h, 53%, 22%);
-$tint__pps-yellow__medium: hsl($pps-yellow__h, 53%, 40%);
-$tint__pps-yellow__lightest: hsl($pps-yellow__h, 63%, 94%);
+$secondary: $pps-blue;
+$tint__secondary__dark: hsl($pps-blue__h, 50%, 22%);
+$tint__secondary__medium: hsl($pps-blue__h, 50%, 40%);
+$tint__secondary__lightest: hsl($pps-blue__h, 60%, 94%);
 
 // Generic variables
 $color__body-fg: $gray-900;
@@ -51,7 +54,7 @@ $color__body-fg: $gray-900;
 // This makes the page seamless when the body is shorter than the viewport height.
 $color__body-bg: $black;
 
-$color__link: $tint__pps-blue__dark;
+$color__link: $tint__secondary__dark;
 $color__link-hover: $gray-700;
 $color__link-focus: $pps-blue;
 
@@ -59,9 +62,9 @@ $color__borders: $gray-200;
 
 
 // Bootstrap color variables
-$blue: $tint__pps-blue__dark;
+$blue: $pps-blue;
 //$indigo:  #6610f2;
-$purple: $pps-purple;
+// $purple: $pps-purple;
 //$pink:    #e83e8c;
 //$red:     #dc3545;
 //$orange:  #fd7e14;
@@ -70,21 +73,9 @@ $green: $pps-green;
 $teal: $pps-blue;
 $cyan: $pps-denim;
 
-$primary: $tint__pps-yellow__dark;
-$secondary: $pps-yellow;
 $success: $pps-blue;
 $info: $pps-blue;
 //$warning:       $yellow;
 //$danger:        $red;
 $light: $gray-200;
-$dark: $tint__pps-blue__dark;
-
-// Set a specific jump point for requesting color jumps
-//$theme-color-interval:      8%;
-
-// The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
-//$yiq-contrasted-threshold:  150;
-
-// Customize the light and dark text colors for use in our YIQ color contrast function.
-//$yiq-text-dark:             $gray-900;
-//$yiq-text-light:            $white;
+//$dark: $pps-blue;

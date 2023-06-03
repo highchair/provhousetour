@@ -1,11 +1,11 @@
 
 .footer {
-  background-color: rgba(gray("900"), .9);
+  background-color: rgba(gray("900"), 0.9);
   color: $white;
   text-align: center;
   
   .page__title {
-    color: $pps-green;
+    color: $primary;
   }
   
   p {
