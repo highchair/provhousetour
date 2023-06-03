@@ -1,67 +1,13 @@
+{% assign properties = site.data.2023-tour %}
 <ul class="navbar-nav nav__menu" role="navigation" aria-label="Location">
+{% for prop in properties %}
   <li class="nav__item">
-    <a href="{% link 2022/71-prospect-st.md %}" class="nav__link{% if page.permalink == '/2022/71-prospect-st/' %} active" aria-current="page{% endif %}">
-      <span class="tour__nav__address">71 Prospect Street (check-in center, restrooms)</span>
-      <span class="tour__nav__house-name">First Church of Christ, Scientist, Providence</span>
+    {%- assign url = site.currenttour | prepend: '/' | append: prop.permalink -%}
+    {%- assign title = house-title | default: prop.property -%}
+    <a href="{{ url }}" class="nav__link{% if page.permalink == url %} active" aria-current="page{% endif %}">
+      <span class="tour__nav__address">{{ title }}</span>
+      {% if prop.house-name %}<span class="tour__nav__house-name">{{ prop.house-name }}</span>{% endif %}
     </a>
   </li>
-  <li class="nav__item">
-    <a href="{% link 2022/84-prospect-st.md %}" class="nav__link{% if page.permalink == '/2022/84-prospect-st/' %} active" aria-current="page{% endif %}">
-      <span class="tour__nav__address">84 Prospect Street</span>
-      <span class="tour__nav__house-name">(Garden Only) Mary Elizabeth & Henry Dexter Sharpe House</span>
-    </a>
-  </li>
-  <li class="nav__item">
-    <a href="{% link 2022/12-keene-st.md %}" class="nav__link{% if page.permalink == '/2022/12-keene-st/' %} active" aria-current="page{% endif %}">
-      <span class="tour__nav__address">12 Keene Street</span>
-      <span class="tour__nav__house-name">Henry B. Metcalf House</span>
-    </a>
-  </li>
-  <li class="nav__item">
-    <a href="{% link 2022/15-17-keene-st.md %}" class="nav__link{% if page.permalink == '/2022/15-17-keene-st/' %} active" aria-current="page{% endif %}">
-      <span class="tour__nav__address">15-17 Keene Street</span>
-      <span class="tour__nav__house-name">Thomas Breck Double House</span>
-    </a>
-  </li>
-  <li class="nav__item">
-    <a href="{% link 2022/58-keene-st.md %}" class="nav__link{% if page.permalink == '/2022/58-keene-st/' %} active" aria-current="page{% endif %}">
-      <span class="tour__nav__address">58 Keene Street</span>
-      <span class="tour__nav__house-name">Harriet L. Bucklin House</span>
-    </a>
-  </li>
-  <li class="nav__item">
-    <a href="{% link 2022/89-keene-st.md %}" class="nav__link{% if page.permalink == '/2022/89-keene-st/' %} active" aria-current="page{% endif %}">
-      <span class="tour__nav__address">89 Keene Street</span>
-      <span class="tour__nav__house-name">Mary P. & William H. Clewley House</span>
-    </a>
-  </li>
-  <li class="nav__item">
-    <a href="{% link 2022/130-lloyd-ave.md %}" class="nav__link{% if page.permalink == '/2022/130-lloyd-ave/' %} active" aria-current="page{% endif %}">
-      <span class="tour__nav__address">130 Lloyd Avenue</span>
-      <span class="tour__nav__house-name">(Garden Only) Julius H. Preston House</span>
-    </a>
-  </li>
-  <li class="nav__item">
-    <a href="{% link 2022/125-lloyd-ave.md %}" class="nav__link{% if page.permalink == '/2022/125-lloyd-ave/' %} active" aria-current="page{% endif %}">
-      <span class="tour__nav__address">125 Lloyd Avenue</span>
-      <span class="tour__nav__house-name">Lindsay T. Damon House</span>
-    </a>
-  </li>
-  <li class="nav__item">
-    <a href="{% link 2022/110-lloyd-ave.md %}" class="nav__link{% if page.permalink == '/2022/110-lloyd-ave/' %} active" aria-current="page{% endif %}">
-      <span class="tour__nav__address">110 Lloyd Avenue</span>
-      <span class="tour__nav__house-name">(Front Garden Only) William H. Phillips House</span>
-    </a>
-  </li>
-  <li class="nav__item">
-    <a href="{% link 2022/103-lloyd-ave.md %}" class="nav__link{% if page.permalink == '/2022/103-lloyd-ave/' %} active" aria-current="page{% endif %}">
-      <span class="tour__nav__address">103 Lloyd Avenue</span>
-      <span class="tour__nav__house-name">Sarah T. Harrison House</span>
-    </a>
-  </li>
-  <li class="nav__item">
-    <a href="{% link 2022/rehabbers-resources.md %}" class="nav__link{% if page.permalink == '/2022/rehabbers-resources/' %} active" aria-current="page{% endif %}">
-      Rehabber’s Resources
-    </a>
-  </li>
+{% endfor %}
 </ul>
