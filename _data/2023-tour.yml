@@ -4,7 +4,10 @@
   house-title: '544 Elmwood Avenue (check-in center, restrooms)'
   house-name: '<b>Registration Center</b>, Paul Cuffee Upper School'
   house-detail:
-  house-description: "The Paul Cuffee School’s charter was approved in 2000. It was named in honor of Captain Paul Cuffee, a Quaker businessman, whaler, and abolitionist of African and Wampanoag heritage, who founded what was perhaps the county’s first racially integrated school in Westport, MA in the late 18th century. In fall of 2001, the Paul Cuffee School opened in two rented locations in Providence with 136 K-3 students. By 2006 the School had a full middle school, encompassing grades 6, 7, and 8. In early August 2010 a former school building at 544 Elmwood Avenue became available for lease. Renovations began in earnest to ready the classrooms for a September opening. Today the Paul Cuffee School enrollment is 820 K-12 students, divided among three buildings identified as their Lower, Middle, and Upper Schools."
+  house-description: | 
+    __**Guest Check-in + Restrooms**__
+    
+    The Paul Cuffee School’s charter was approved in 2000. It was named in honor of Captain Paul Cuffee, a Quaker businessman, whaler, and abolitionist of African and Wampanoag heritage, who founded what was perhaps the county’s first racially integrated school in Westport, MA in the late 18th century. In fall of 2001, the Paul Cuffee School opened in two rented locations in Providence with 136 K-3 students. By 2006 the School had a full middle school, encompassing grades 6, 7, and 8. In early August 2010 a former school building at 544 Elmwood Avenue became available for lease. Renovations began in earnest to ready the classrooms for a September opening. Today the Paul Cuffee School enrollment is 820 K-12 students, divided among three buildings identified as their Lower, Middle, and Upper Schools.
 
 - property: '209-211 Congress Avenue'
   permalink: 209-211-congress-ave/
@@ -78,7 +81,7 @@
 - property: '170 Ontario Street'
   permalink: 170-ontario-st/
   img-path: 170-ontario-st.jpg
-  house-title:
+  house-title: '170 Ontario Street with Rehabbers Resources table'
   house-name: 'Robert A. Jenckes House'
   house-detail: '<i>1901, Edwin T. Banning, architect</i><br>Owned by Alana Bibeau and David Leveillee'
   house-description: |  
@@ -95,6 +98,17 @@
     The Jenckes family would live at 170 Ontario for more than 30 years. Robert died in 1931, and his widow Jessie sold the house to the O’Hara family in 1936. The O’Hara family was quite large. In the 1940 U.S. Census, the household included: Hannah T., a 57-year-old teacher, sister Margaret – 48, with no listed occupation – sister Mary V., a 45-year-old teacher, sister Sara H., a 58-year-old private accountant, sister Loretta C., a 42-year-old music teacher, and brother Thomas M., a 63- year-old tool maker. The extended O’Hara family resided at 170 Ontario until it was sold to Charles F. Gormley and his wife Joan in 1976.
     
     The current owners purchased the home in 2018 from the Gormley family, relocating from Warwick with a desire to raise their children in a diverse urban neighborhood. Since acquiring the house, the family has made small changes, in particular renovating an upstairs bathroom. Though original construction documents are a rarity for homes of this age, the homeowners received the original set of blueprints as a gift from the previous owners. During the COVID-19 pandemic, family members greatly utilized all spaces of the house, enjoying afternoons on the second-floor porch. They also focused on restoring all of the original brass hardware throughout.
+    
+    ***
+    
+    <img class="img-fluid" src="/assets/guidebook/rehabbers-resources-pic.jpg" alt="" />
+    
+    ## Rehabbers Resources
+    {:.h4}
+    
+    Maintaining Providence’s thousands of historic homes is a team effort, and we believe everyone and anyone can be a preservationist. PPS supports the projects being done by homeowners, renters, and community stewards – the kind of work that happens at night and on weekends – with our Rehabbers Resources.
+    
+    Stop by our table at 170 Ontario Street to learn more about how the Robert A. Jenckes House exemplifies some of the challenges historic homeowners face, and how we can connect you to the programs, trainings, and information you might need to tackle your preservation projects. The historic house doctor is in!
 
 - property: '84 Melrose Street '
   permalink: 84-melrose-st/
