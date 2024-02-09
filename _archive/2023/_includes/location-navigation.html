@@ -1,0 +1,13 @@
+{% assign properties = site.data.2023-tour %}
+<ul class="navbar-nav nav__menu" role="navigation" aria-label="Location">
+{% for prop in properties %}
+  <li class="nav__item">
+    {%- assign url = site.currenttour | prepend: '/' | append: prop.permalink -%}
+    {%- assign title = prop.house-title | default: prop.property -%}
+    <a href="{{ url }}" class="nav__link{% if page.permalink == url %} active" aria-current="page{% endif %}">
+      <span class="tour__nav__address">{{ title }}</span>
+      {% if prop.house-name %}<span class="tour__nav__house-name">{{ prop.house-name }}</span>{% endif %}
+    </a>
+  </li>
+{% endfor %}
+</ul>

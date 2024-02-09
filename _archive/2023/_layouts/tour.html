@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+
+  {% include head.html %}
+
+  <body class="layout__{{ page.layout }} page__{{ page.body-class }}">
+    <div class="page__cover">
+      <img src="/assets/img/209-congress.jpg" alt="" />
+    </div>
+    
+    {% include tour-navigation.html %}
+
+    <main class="page__opener u__content u__vspacing">
+      <div class="spacer"></div>
+
+      {% if page.permalink == '/2023/' %}
+      <div class="u__vspacing u__m-spacing">
+        <img class="img-fluid opener__img" src="/assets/img/FHH-text-opener-2023.png" alt="Providence Preservation Society’s Festival of Historic Houses" />
+      </div>
+      {% endif %}
+      {% if page.img-path %}
+      <div class="u__container u__m-spacing ">
+        <img class="img-fluid" src="{{ site.baseurl }}{{ site.currenttour }}assets/{{ page.img-path }}" alt="" />
+      </div>
+      {% endif %}
+      <article class="u__container u__m-spacing bg__white">
+        {{ content }}
+      </article>
+    </main>
+
+    {% include footer.html %}
+    {% include scripts.html %}
+  </body>
+</html>

@@ -1,0 +1,69 @@
+---
+layout: tour
+body-class: house
+---
+{% assign properties = site.data.2023-tour %}
+{%- for prop in properties -%}
+  {% if prop.property == page.property %}
+    {% assign title = house-title | default: prop.property %}
+  <div class="u__spacing opener location">
+    <h1 class="h2 location__title">
+      <span class="location__address">{{ title }}</span>
+      {% if prop.house-name %}<span class="location__house-name">{{ prop.house-name }}</span>{% endif %}
+    </h1>
+    <p class="lead">{{ prop.house-detail }}</p>
+    <figure>
+      <img class="img-fluid" src="{{ site.baseurl }}assets/guidebook/{{ prop.img-path }}" alt="" />
+    </figure>
+
+    {{ prop.house-description | markdownify }}
+  </div>
+    {% assign item_index = forloop.index0 %}
+    {% assign props_total = forloop.length | minus: 1 %}
+  {% endif %}
+{%- endfor -%}
+  {% comment %}
+    Do a lot of work to replicate what should be built-in Jekyll functionality in a forloop for prev and next variables
+    These only work on Pages and Posts, which is a bummer
+  {% endcomment %}
+  {% assign prev_index = item_index | minus: 1 %}
+  {% assign next_index = item_index | plus: 1 %}
+  {% if prev_index < 0 %}
+    {% comment %} If less than zero, get the last one {% endcomment %}
+    {% assign prev = properties[props_total] %}
+  {% else %}
+    {% assign prev = properties[prev_index] %}
+  {% endif %}
+  {% if next_index > props_total %}
+    {% comment %} If ghreater than the total number of props, get the first one {% endcomment %}
+    {% assign next = properties[0] %}
+  {% else %}
+    {% assign next = properties[next_index] %}
+  {% endif %}
+  <footer class="tour__house__next u__spacing--sm bg__primary">
+    <h2 class="h5">More Locations:</h2>
+    <p>Previous and Next are listed as a recommended tour route by walking distance.</p>
+    <ul class="navbar-nav nav__menu" role="navigation" aria-label="Next Location">
+      {% if prev %}
+      <li class="nav__item">
+        <a class="nav__link" href="/{{ site.currenttour }}{{ prev.permalink }}">
+          <span class="tour__nav__label">Previous:</span>
+          <span class="tour__nav__address">{% if prev.house-title %}{{ prev.house-title }}{% else %}{{ prev.property }}{% endif %}</span>
+          {% if prev.house-name %}<span class="tour__nav__house-name">{{ prev.house-name }}</span>{% endif %}
+        </a>
+      </li>
+      {% endif %}
+      {% if next %}
+      <li class="nav__item">
+        <a class="nav__link" href="/{{ site.currenttour }}{{ next.permalink }}">
+          <span class="tour__nav__label">Next:</span>
+          <span class="tour__nav__address">{% if next.house-title %}{{ next.house-title }}{% else %}{{ next.property }}{% endif %}</span>
+          {% if next.house-name %}<span class="tour__nav__house-name">{{ next.house-name }}</span>{% endif %}
+        </a>
+      </li>
+      {% endif %}
+      <li class="nav__item">
+        <a class="nav__link" href="{% link 2023/map.html %}">Location Map</a>
+      </li>
+    </ul>
+  </footer>
