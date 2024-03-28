@@ -9,7 +9,7 @@ Stand-alone marketing website for the annual Festival of Historic Houses.
 [Grey Matter](https://github.com/oomphinc/oomph-grey-matter) is a boilerplate for 
 stand-alone Jekyll projects. Inspired by [Distillery](https://github.com/thinkshout/distillery/tree/master/)
 (and now heavily updated/modified), built and served with Jekyll, leveraging 
-Oomph Scaffold custom code and *Bootstrap 4*.
+Oomph Scaffold custom code.
 
 
 ## Getting started
