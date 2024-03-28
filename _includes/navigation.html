@@ -6,15 +6,16 @@
           {% endcomment %}
           <header class="nav__container nav--public navbar fixed-top">
             <nav id="main-nav" class="main__nav navbar navbar-expand-sm nav u__m-spacing">
-              <a class="navbar-brand nav__logo" href="{{ site.baseurl }}">
-                <img src="{{ site.baseurl }}assets/img/PPS-logo-black-trans_240.png" alt="Providence Preservation Society" />
-                <span class="nav__title">2023 Festival of Historic Houses</span>
+              <a class="navbar-brand nav__logo" href="{% link index.html %}">
+                <img src="{% link assets/img/PPS-logo-black-trans_240.png %}" alt="Providence Preservation Society" />
+                <span class="nav__title">2024 Festival of Historic Houses</span>
               </a>
               <button class="navbar-toggler nav__button" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="nav__button__icon">&equiv;</span>
                 <span class="nav__button__text"><span class="sr-only">Open the </span>Menu</span>
               </button>
               <div class="collapse navbar-collapse nav__pane" id="navbarContent">
+                {% comment %}
                 <ul class="navbar-nav nav__list" role="navigation">
                   <li class="nav-item nav__item">
                     <a href="{% link tour.html %}" class="nav-link nav__link{% if page.permalink == '/tours/' %} active" aria-current="page{% endif %}">Tour Tickets</a>
@@ -26,6 +27,7 @@
                     <a href="{% link programs.html %}" class="nav-link nav__link{% if page.permalink == '/programs/' %} active" aria-current="page{% endif %}">Public Programs</a>
                   </li>
                 </ul>
+                {% endcomment %}
               </div>
             </nav>
           </header>
