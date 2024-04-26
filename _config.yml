@@ -6,7 +6,7 @@ currenttour: '2024/'
 port: 5010
 url: //www.providencehousetour.com
 twitter_handle: pvdpreservation
-eventbrite: 
+eventbrite: https://www.eventbrite.com/e/2024-festival-of-historic-houses-tickets-877715810617?aff=oddtdtcreator
 
 # Define some defaults
 defaults:
