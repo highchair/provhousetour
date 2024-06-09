@@ -1,0 +1,19 @@
+  <li class="nav-item nav__item">
+    <a href="{% link 2024/welcome.html %}" class="nav-link nav__link{% if page.permalink == '/2024/welcome/' %} active" aria-current="page{% endif %}">Welcome message</a>
+  </li>
+  <li class="nav-item nav__item dropdown">
+    <a href="{% link 2024/neighborhood.html %}" class="dropdown-item nav__link{% if page.permalink == '/2024/neighborhood/' %} active" aria-current="page{% endif %}">Neighborhood History</a>
+    {% include location-navigation.html %}
+  </li>
+  <li class="nav-item nav__item">
+    <a href="{% link 2024/map.html %}" class="nav__link{% if page.permalink == '/2024/map/' %} active" aria-current="page{% endif %}">Location Map</a>
+  </li>
+  <li class="nav-item nav__item">
+    <a href="{% link 2024/catalpa-rd-history.html %}" class="nav__link{% if page.permalink == '/2024/catalpa-rd-history/' %} active" aria-current="page{% endif %}">Catalpa Road History</a>
+  </li>
+  <li class="nav-item nav__item">
+    <a href="{% link 2024/stories-mt-hope.html %}" class="nav__link{% if page.permalink == '/2024/stories-mt-hope/' %} active" aria-current="page{% endif %}">Stories of Mount Hope</a>
+  </li>
+  <li class="nav-item nav__item">
+    <a href="{% link 2024/sponsors.html %}" class="nav__link{% if page.permalink == '/2024/sponsors/' %} active" aria-current="page{% endif %}">Special Thanks & Sponsors</a>
+  </li>
