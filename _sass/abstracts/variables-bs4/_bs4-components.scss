@@ -46,7 +46,7 @@
 //$nav-pills-link-active-bg:          $component-active-bg;
 //
 //$nav-divider-color:                 $gray-200;
-//$nav-divider-margin-y:              ($spacer / 2);
+//$nav-divider-margin-y:              ($spacer * 0.5);
 
 
 // Navbar
@@ -101,7 +101,7 @@ $navbar-nav-link-padding-x: $spacer;
 //
 //$card-img-overlay-padding:          1.25rem;
 //
-//$card-group-margin:                 ($grid-gutter-width / 2);
+//$card-group-margin:                 ($grid-gutter-width * 0.5);
 //$card-deck-margin:                  $card-group-margin;
 //
 //$card-columns-count:                3;
