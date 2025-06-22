@@ -15,12 +15,11 @@ $gray-700: #3d3c45;
 $gray-900: #222;
 $black:    #101010;
 
-
 // Main brand colors
-$pps-blue: #369;
-$pps-blue__h: 210;
+$pps-blue: #6297ca;
+$pps-blue__h: 209;
 $pps-blue__s: 50;
-$pps-blue__l: 40;
+$pps-blue__l: 59;
 
 $pps-denim: #658E9C;
 $pps-denim__h: 195;
@@ -38,12 +37,12 @@ $pps-purple__h: 263;
 
 
 // Colors for this year's theme
-$primary: $pps-yellow;
+$primary: $pps-blue;
 $tint__primary__dark: hsl($pps-yellow__h, 53%, 28%);
 $tint__primary__medium: hsl($pps-yellow__h, 53%, 40%);
 $tint__primary__lightest: hsl($pps-yellow__h, 63%, 94%);
 
-$secondary: $pps-blue;
+$secondary: $pps-yellow;
 $tint__secondary__dark: hsl($pps-blue__h, 50%, 22%);
 $tint__secondary__medium: hsl($pps-blue__h, 50%, 40%);
 $tint__secondary__lightest: hsl($pps-blue__h, 60%, 94%);

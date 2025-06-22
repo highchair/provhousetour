@@ -29,7 +29,7 @@
   // Primary and dark color themes
   // Using the darker version for accessibility
   &__primary {
-    background-color: $tint__primary__lightest;
+    background-color: hsla(from $tint__primary__lightest h s l / 0.88);
   }
 
   &__white {
