@@ -2,13 +2,16 @@
 <html class="no-js" lang="en-US">
 
   {% include head.html %}
+  {% if page.body-bg-img %}
+    {% assign body-bg-img = page.body-bg-img %}
+  {% else %}
+    {% assign body-bg-img = 'modern-home-interior.jpg' %}
+  {% endif %}
 
   <body class="layout__{{ page.layout }} page__{{ page.body-class }}">
-    {% if page.body-bg-img %}
     <div class="page__cover">
-      <img src="{{ site.baseurl }}assets/img/{{ page.body-bg-img }}" alt="" />
+      <img src="{{ site.baseurl }}assets/img/{{ body-bg-img }}" alt="" />
     </div>
-    {% endif %}
 
     {% include navigation.html %}
 
@@ -17,7 +20,7 @@
       <article>
         {{ content }}
 
-        {% comment %} {% include sponsors.html %} {% endcomment %}
+        {% if page.permalink != '/sponsors/' %}{% include sponsors.html %}{% endif %}
       </article>
     </main>
 

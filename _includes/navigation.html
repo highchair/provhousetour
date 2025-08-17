@@ -10,7 +10,6 @@
                 <img src="{% link assets/img/PPS-logo-black-trans_240.png %}" alt="Providence Preservation Society" />
                 <span class="nav__title">2025 Festival of Historic Houses</span>
               </a>
-              {% comment %}
               <button class="navbar-toggler nav__button" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="nav__button__icon">&equiv;</span>
                 <span class="nav__button__text"><span class="sr-only">Open the </span>Menu</span>
@@ -18,16 +17,15 @@
               <div class="collapse navbar-collapse nav__pane" id="navbarContent">
                 <ul class="navbar-nav nav__list" role="navigation">
                   <li class="nav-item nav__item">
-                    <a href="{% link tour.html %}" class="nav-link nav__link{% if page.permalink == '/tours/' %} active" aria-current="page{% endif %}">Tour Tickets</a>
+                    <a href="{% link schedule.html %}" class="nav-link nav__link{% if page.permalink == '/program/' %} active" aria-current="page{% endif %}">Schedule</a>
                   </li>
                   <li class="nav-item nav__item">
-                    <a href="{% link preview.html %}" class="nav-link nav__link{% if page.permalink == '/preview/' %} active" aria-current="page{% endif %}">Kickoff Party</a>
+                    <a href="{% link travel.html %}" class="nav-link nav__link{% if page.permalink == '/travel/' %} active" aria-current="page{% endif %}">Travel & Lodging</a>
                   </li>
                   <li class="nav-item nav__item">
-                    <a href="{% link programs.html %}" class="nav-link nav__link{% if page.permalink == '/programs/' %} active" aria-current="page{% endif %}">Public Programs</a>
+                    <a href="{% link sponsors.html %}" class="nav-link nav__link{% if page.permalink == '/sponsors/' %} active" aria-current="page{% endif %}">Sponsors</a>
                   </li>
                 </ul>
               </div>
-              {% endcomment %}
             </nav>
           </header>

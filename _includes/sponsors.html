@@ -1,11 +1,26 @@
+{% if page.permalink != '/sponsors/' %}
     <div class="u__spacing"></div>
     <div class="u__content">
       <aside class="sponsors">
         <div class="u__vspacing bg__white">
 
           <h2 class="h3 text-center sponsors__title mb-0">Festival Sponsors</h2>
-          <p class="text-center u__mb-spacing">The 2024 Festival is generously sponsored by:</p>
-  
+          <p class="text-center u__mb-spacing">The 2025 Festival is generously sponsored by:</p>
+{% endif %}
+          <h3 class="h4 text-center">Presenting Sponsor</h3>
+          <div class="row sponsors__list u__mb-spacing">
+            <p><img class="col img--rwd" style="min-width: 260px; max-width: 360px" src="{% link assets/sponsors/prov-tourism-council.jpg %}" alt="Providence Tourism Council" /></p>
+            
+            {% if page.permalink == '/sponsors/' %}
+            <p><i>The Providence Tourism Council strives to increase the economic impact of tourism, commerce and engagement of visitors through the development of events, programs and tourism within the City of Providence. The PTC is part of the Convention Authority of the City of Providence and established by state statute. Since its creation in 1984, the PTC has provided public relations, marketing and financial support to organizations who have demonstrated the ability to draw visitors to the city, have an economic impact, benefit for Providence residents, and generate awareness and marketing exposure for the city. The PTC has been a supporter of PPS’s Festival of Historic Houses for close to 20 years!</i></p>
+            {% endif %}
+          </div>
+          
+          <h3 class="h4 text-center">Modernist Champion</h3>
+          <div class="row sponsors__list u__mb-spacing">
+            <img class="col img--rwd" style="min-width: 120px; max-width: 180px" src="{% link assets/sponsors/school-one_trans.png %}" alt="School One" />
+          </div>
+          {% comment %}
           <h3 class="h4 text-center">Partners in Preservation</h3>
           <div class="row sponsors__list u__mb-spacing">
             <img class="img--rwd" width="260" src="{{ site.baseurl }}assets/sponsors/adlers.jpg" alt="Adlers Hardware" />
@@ -25,7 +40,6 @@
             <p class="col h5 text-center text-primary text-info" style="min-width: 240px"><i>Dr. Joseph Chazan and Ms. Victoria Veh</i></p>
             <p class="col h5 text-center text-primary text-info" style="min-width: 240px"><i>Elaine and Barry Fain</i></p>
             <img class="col img--rwd" style="min-width: 150px; max-width: 200px" src="{{ site.baseurl }}assets/sponsors/city-kitty-providence.png" alt="City Kitty Providence" />
-            <img class="col img--rwd" style="min-width: 150px; max-width: 200px" src="{{ site.baseurl }}assets/sponsors/prf_color_full_logo.png" alt="Providence Revolving Fund" />
           </div>
 
           <h3 class="h4 text-center">Supporting Sponsors</h3>
@@ -53,18 +67,9 @@
             <img class="img--rwd" style="min-width: 120px; max-width: 180px" src="{{ site.baseurl }}assets/sponsors/NEH-logo.png" alt="New England Home magazine" />
           </div>
 
-        </div>
+        {% endcomment %}
+  {% if page.permalink != '/sponsors/' %}
+        </div>  
       </aside>
     </div>
-
-{% comment %}
-
-Older, not used yet but likely will come back
-
-<img class="col img--rwd" style="min-width: 180px; max-width: 280px" src="{{ site.baseurl }}assets/sponsors/TARC-logo-color.jpg" alt="The Armory Revival Company" />
-<img class="col img--rwd" style="min-width: 140px; max-width: 200px" src="{{ site.baseurl }}assets/sponsors/David-Abbott-without-RP.jpg" alt="David Abbott" />
-<img class="col img--rwd" style="min-width: 220px; max-width: 280px" src="{{ site.baseurl }}assets/sponsors/baycoast-bank.jpg" alt="BayCoast Bank" />
-<img class="col img--rwd" style="min-width: 180px; max-width: 240px" src="{{ site.baseurl }}assets/sponsors/paul-cuffee-school.jpg" alt="Paul Cuffee School" />
-<img class="col img--rwd" style="min-width: 140px; max-width: 180px" src="{{ site.baseurl }}assets/sponsors/OSOF_logo.jpg" alt="Ocean State Oyster Festival" />
-
-{% endcomment %}
+{% endif %}
