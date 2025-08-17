@@ -38,14 +38,14 @@ $pps-purple__h: 263;
 
 // Colors for this year's theme
 $primary: $pps-blue;
-$tint__primary__dark: hsl($pps-yellow__h, 53%, 28%);
-$tint__primary__medium: hsl($pps-yellow__h, 53%, 40%);
-$tint__primary__lightest: hsl($pps-yellow__h, 63%, 94%);
+$tint__primary__dark: hsl($pps-blue__h, 53%, 28%);
+$tint__primary__medium: hsl($pps-blue__h, 53%, 40%);
+$tint__primary__lightest: hsl($pps-blue__h, 63%, 94%);
 
 $secondary: $pps-yellow;
-$tint__secondary__dark: hsl($pps-blue__h, 50%, 22%);
-$tint__secondary__medium: hsl($pps-blue__h, 50%, 40%);
-$tint__secondary__lightest: hsl($pps-blue__h, 60%, 94%);
+$tint__secondary__dark: hsl($pps-yellow__h, 50%, 22%);
+$tint__secondary__medium: hsl($pps-yellow__h, 50%, 40%);
+$tint__secondary__lightest: hsl($pps-yellow__h, 60%, 94%);
 
 // Generic variables
 $color__body-fg: $gray-900;
@@ -53,9 +53,9 @@ $color__body-fg: $gray-900;
 // This makes the page seamless when the body is shorter than the viewport height.
 $color__body-bg: $black;
 
-$color__link: $tint__secondary__dark;
-$color__link-hover: $gray-700;
-$color__link-focus: $pps-blue;
+$color__link: $tint__primary__dark;
+$color__link-hover: $primary;
+$color__link-focus: $primary;
 
 $color__borders: $gray-200;
 

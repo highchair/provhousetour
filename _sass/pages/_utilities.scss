@@ -1,0 +1,10 @@
+.text {
+
+  &__primary {
+    color: $primary;
+  }
+  
+  &__sentencecase {
+    text-transform: unset;
+  }
+}

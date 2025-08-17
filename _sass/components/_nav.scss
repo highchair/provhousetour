@@ -6,7 +6,7 @@
 }
 
 .nav {
-  align-items: flex-start;
+  align-items: center;
 
   // Actually one level above .nav
   &__container {
@@ -46,11 +46,12 @@
 
   &__logo {
     display: flex;
-    height: 56px;
+    align-items: center;
+    //height: 56px;
     text-decoration: none;
 
     img {
-      height: 64px;
+      height: 56px;
     }
   }
 
@@ -100,7 +101,7 @@
     color: $tint__primary__dark;
     background-color: transparent;
     display: block;
-    font-size: 112.5%;
+    //font-size: 112.5%;
     font-weight: $font-weight-bold;
     line-height: 1;
     padding: $spacer;

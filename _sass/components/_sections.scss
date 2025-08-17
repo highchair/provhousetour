@@ -39,4 +39,8 @@
   &__white-trans {
     background: rgba($white, .92);
   }
+
+  &__secondary {
+    background-color: $tint__secondary__lightest;
+  }
 }
